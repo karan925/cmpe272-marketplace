@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <header>
@@ -25,6 +26,17 @@
 
 <h1>AJKM Marketplace</h1>
 <p>Pictures and stuff can go here.</p>
+<?php 
+      if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+         echo '<div class="Container">';
+         echo '<div class="row">';
+         echo '<div class="col-6 offset-8">';
+         echo "Welcome to our Marketplace: ".$_SESSION['username']."!";
+         echo '</div>';
+         echo '</div>';
+         echo '</div>';
+      }
+    ?>
 
 <p>Mustafa's products</p>
 <ul>

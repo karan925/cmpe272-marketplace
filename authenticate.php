@@ -23,8 +23,56 @@
 </header>
 <body>
 
-<h3>Sign Up or Log In</h3>
-<p>Functionality for User creation and log in will go here. When user registers here an account must be created in all the company websites.</p>
+<h3 class="offset-4">Log In</h3>
+<div class="Container">
+    <form action="login.php" method="post">
+        <div class="form-row">
+            <div class="form-group col-sm-4 offset-4">
+                <td><strong>Username:</strong></td>
+                <input type="text" class="mr-1 offset-1" name="Username" placeholder="Username">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-sm-4 offset-4">
+                <td><strong>Password:</strong></td>
+                <input type="text" class="mr-2 offset-1" name="Password" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-sm-4 offset-4">
+                <input type="submit" name="Enter" value="Enter">
+            </div>
+        </div>
+    </form>
+    </div>
 
+<h3 class="offset-4">Register if you don't have an account</h3>
+<div class="Container">
+    <form action="register.php" method="post">
+        <div class="form-row">
+            <div class="form-group col-sm-4 offset-4">
+                <td><strong>Username:</strong></td>
+                <input type="text" class="mr-1 offset-1" name="Username" placeholder="Username">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-sm-4 offset-4">
+                <td><strong>Password:</strong></td>
+                <input type="text" class="mr-2 offset-1" name="Password" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-sm-4 offset-4">
+                <td><strong>Repeat Password:</strong></td>
+                <input type="text" class="mr-2 offset-1" name="RepeatPassword" placeholder="Repeat Password">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-sm-4 offset-4">
+                <input type="submit" name="Enter" value="Enter">
+            </div>
+        </div>
+    </form>
+    </div>
 </body>
 </html>
