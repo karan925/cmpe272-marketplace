@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <header>
@@ -23,8 +24,13 @@
 </header>
 <body>
 
-<h3>Choose a product and add a review</h3>
+<h3>Choose a product and add a review or view a review</h3>
 <p>Functionality that allows user to choose any product in the marketplace and rate it will go here.</p>
 
+
+
+<?php 
+// echo $_SESSION['username'];
+?>
 </body>
 </html>
