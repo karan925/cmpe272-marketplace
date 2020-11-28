@@ -57,6 +57,10 @@
       }
 
    }
+   else {
+      echo "Log in to see Visit History";
+      echo '<a href="./authenticate"><button>Log In Here!</button></a>';
+   }
 ?>
 
 </body>
