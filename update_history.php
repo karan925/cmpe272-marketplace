@@ -57,12 +57,15 @@
             foreach ($result as $x) {
                 $unserialized = $x['history'];
             }
-            echo $unserialized;
+            // echo $unserialized;
             $history = unserialize($unserialized);
             if (count($history) == 5) {
                 array_shift($history);
                 array_push($history, $product);
              }
+            else {
+                array_push($history, $product);
+            }
             $serialized = serialize($history);
             echo $serialized;
             $query = "DELETE FROM heroku_8c6c26a69cb9c50.users_history WHERE username = "."'".$username."'";
