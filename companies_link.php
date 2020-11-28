@@ -36,10 +36,10 @@
 <h3>Links to Products</h3>
 <nav>
     <ul>
-        <li><a href="./ozone_products.php">Ozone Architecture</a></li>
-        <li><a href="https://liuj.us/Products.html">Potato Inc.</a></li>
-        <li><a href="https://karantrucking.herokuapp.com/products.php">Karan's Trucking Co.</a></li>
-        <li><a href="http://www.cmpe272mustafay.com/hw/hw2_products_services.php">SFDB</a></li>
+        <li><a target = '_blank' href="./ozone_products.php">Ozone Architecture</a></li>
+        <li><a target = '_blank' href="https://liuj.us/Products.html">Potato Inc.</a></li>
+        <li><a target = '_blank' href="https://karantrucking.herokuapp.com/products.php">Karan's Trucking Co.</a></li>
+        <li><a target = '_blank' href="http://www.cmpe272mustafay.com/hw/hw2_products_services.php">SFDB</a></li>
     </ul>
 </nav>
 
