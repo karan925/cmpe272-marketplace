@@ -22,6 +22,7 @@
   <a href="./authenticate.php">Log In/Sign Up</a>
 </div>
 </header>
+<meta http-equiv="refresh" content="10" > 
 <body>
 
 <h3>Your Previously Visited Products</h3>
@@ -48,12 +49,16 @@
          foreach ($result as $x) {
              $unserialized = $x['history'];
          }
-         // echo $unserialized;
-         $history = unserialize($unserialized);
+         $history = array_reverse(unserialize($unserialized));
+         $ozone = array('/Skyscraper.php', '/Museums.php', '/TrainStation.php', '/Houses.php', '/Airports.php', '/Apartments.php', '/BusinessComplex.php', '/ShoppingComplex.php', '/Stadiums.php', '/Landmarks.php');
          foreach ($history as $page) {
-            echo '<li>'.$page.'</li>';
+            $name = substr($page, 1,-4);
+            $searchpos1 = array_search($page, $ozone);
+            if ($searchpos1 !== FALSE) {
+               $link = 'http://localhost:6969/'.$page;
+            }
+            echo '<ol><a href="'.$link.'"><strong>'.$name.'</strong></a></ol>';
          }
-         // print_r($history);
       }
 
    }
