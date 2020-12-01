@@ -23,17 +23,7 @@
 </header>
 <body>
 
-<h3>Companies in our Marketplace</h3>
-<nav>
-    <ul>
-        <li><a href="http://myozone.org">Ozone Architecture</a></li>
-        <li><a href="http://liuj.us">Potato Inc.</a></li>
-        <li><a href="https://karantrucking.herokuapp.com/">Karan's Trucking Co.</a></li>
-        <li><a href="http://www.cmpe272mustafay.com/hw/hw2_company_home.html">SFDB</a></li>
-    </ul>
-</nav>
-
-<h3>Links to Products</h3>
+<h3>Links to Our Product Websites</h3>
 <nav>
     <ul>
         <li><a target = '_blank' href="./ozone_products.php">Ozone Architecture</a></li>
