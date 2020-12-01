@@ -59,12 +59,19 @@
             }
             // echo $unserialized;
             $history = unserialize($unserialized);
-            if (count($history) == 5) {
-                array_shift($history);
+            $searchpos = array_search($product, $history);
+            if ($searchpos !== FALSE) {
+                array_splice($history, $searchpos, 1);
                 array_push($history, $product);
-             }
+            }
             else {
-                array_push($history, $product);
+                if (count($history) == 5) {
+                    array_shift($history);
+                    array_push($history, $product);
+                 }
+                else {
+                    array_push($history, $product);
+                }
             }
             $serialized = serialize($history);
             echo $serialized;
