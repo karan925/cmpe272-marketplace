@@ -90,8 +90,8 @@
             
             $data = curl_exec($handle);
             curl_close($handle);
-            echo $data;
-            // header("Location: ./home.php");
+            // echo $data;
+            header("Location: ./home.php");
         }
 
         function invalidAuthentication() {
