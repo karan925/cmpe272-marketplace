@@ -29,8 +29,22 @@
 <p>The list of all the user's product visit history will go here.</p>
 <?php 
 // echo $_SESSION['username'];
-   if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-      $query = "SELECT * FROM heroku_8c6c26a69cb9c50.users_history WHERE username = "."'".$_SESSION['username']."'";
+   $con = mysqli_connect("us-cdbr-east-02.cleardb.com", "b74d7cacca644f", "96adc723");
+
+   mysqli_select_db($con, "heroku_8c6c26a69cb9c50");
+   $query = "SELECT * FROM heroku_8c6c26a69cb9c50.session_status WHERE status = 'session'";
+
+   if ( !( $result = mysqli_query($con, $query))) {
+      print("Could not execute query! <br />");
+      die();
+   }
+
+   foreach ($result as $x) {
+      $loggedin = $x['loggedin'];
+      $Username = $x['username'];
+   }
+   if ($loggedin == 1) {
+      $query = "SELECT * FROM heroku_8c6c26a69cb9c50.users_history WHERE username = "."'".$Username."'";
       $con = mysqli_connect("us-cdbr-east-02.cleardb.com", "b74d7cacca644f", "96adc723");
 
       mysqli_select_db($con, "heroku_8c6c26a69cb9c50");
@@ -43,7 +57,7 @@
             echo "No Visit History at the moment. Go shop.";
       }
       else {
-         $query = "SELECT history FROM heroku_8c6c26a69cb9c50.users_history WHERE username = "."'".$_SESSION['username']."'";
+         $query = "SELECT history FROM heroku_8c6c26a69cb9c50.users_history WHERE username = "."'".$Username."'";
          $result = mysqli_query($con, $query);
          $unserialized = array();
          foreach ($result as $x) {
