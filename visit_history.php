@@ -69,7 +69,7 @@
             $name = substr($page, 1,-4);
             $searchpos1 = array_search($page, $ozone);
             if ($searchpos1 !== FALSE) {
-               $link = 'http://localhost:6969/'.$page;
+               $link = 'http://myozone.org/'.$page;
             }
             echo '<ol><a href="'.$link.'"><strong>'.$name.'</strong></a></ol>';
          }
