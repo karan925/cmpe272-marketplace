@@ -46,6 +46,27 @@
         else {
             $_SESSION['loggedin'] = true;
             $_SESSION['username'] = $Username;
+            $handle = curl_init();
+            $url = "http://myozone.org/login_from_market.php";
+            
+            
+            $postData = array(
+            'Username' => $Username,
+            'Password'  => $Password
+            );
+            
+            curl_setopt_array($handle,
+            array(
+                CURLOPT_URL => $url,
+                CURLOPT_POST       => true,
+                CURLOPT_POSTFIELDS => $postData,
+                CURLOPT_RETURNTRANSFER     => true,
+            )
+            );
+            
+            $data = curl_exec($handle);
+            
+            curl_close($handle);
             header("Location: ./home.php");
         }
 
