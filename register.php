@@ -74,7 +74,8 @@
                 $data = curl_exec($handle);
                 
                 curl_close($handle);
-                header("Location: ./home.php");
+                echo $data;
+                // header("Location: ./home.php");
             }
             else {
                 echo "Error adding User";
