@@ -26,7 +26,7 @@
 <h3>Links to Our Product Websites</h3>
 <nav>
     <ul>
-        <li><a target = '_blank' href="./ozone_products.php">Ozone Architecture</a></li>
+        <li><a target = '_blank' href="http://myozone.org/product.php">Ozone Architecture</a></li>
         <li><a target = '_blank' href="https://liuj.us/Products.html">Potato Inc.</a></li>
         <li><a target = '_blank' href="https://karantrucking.herokuapp.com/products.php">Karan's Trucking Co.</a></li>
         <li><a target = '_blank' href="http://www.cmpe272mustafay.com/hw/hw2_products_services.php">SFDB</a></li>
