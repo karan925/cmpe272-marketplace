@@ -44,8 +44,32 @@
             die();
         }
         else {
-            $_SESSION['loggedin'] = true;
-            $_SESSION['username'] = $Username;
+            $query = "SELECT * FROM heroku_8c6c26a69cb9c50.session_status WHERE status = 'session'";
+            if ( !( $result = mysqli_query($con, $query))) {
+                print("Could not execute query 1! <br />");
+                die();
+            }
+
+            if (mysqli_num_rows($result) == 0) {
+                $query = "INSERT INTO heroku_8c6c26a69cb9c50.session_status (status, loggedin, username) VALUES ('session', 1,"."'".$Username."'".")";
+                if ( !( $result = mysqli_query($con, $query))) {
+                    print("Could not execute query 2! <br />");
+                    die();
+                }
+            }
+            else {
+                $query = "DELETE FROM heroku_8c6c26a69cb9c50.session_status WHERE status = 'session'";
+                if ( !( $result = mysqli_query($con, $query))) {
+                    print("Could not execute query 3! <br />");
+                    die();
+                }
+                $query = "INSERT INTO heroku_8c6c26a69cb9c50.session_status (status, loggedin, username) VALUES ('session', 1,"."'".$Username."'".")";
+                if ( !( $result = mysqli_query($con, $query))) {
+                    print("Could not execute query 4! <br />");
+                    die();
+                }
+            }
+
             $handle = curl_init();
             $url = "http://myozone.org/login_from_market.php";
             
@@ -65,9 +89,9 @@
             );
             
             $data = curl_exec($handle);
-            
             curl_close($handle);
-            header("Location: ./home.php");
+            echo $data;
+            // header("Location: ./home.php");
         }
 
         function invalidAuthentication() {
