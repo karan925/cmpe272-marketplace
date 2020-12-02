@@ -26,10 +26,41 @@
     extract( $_POST );
     $product = $Product;
     $loggedin = $Loggedin;
-    $username = $Username; 
+    $username = $Username;
+    echo "Hello"; 
     if ($username) {
-        $_SESSION['loggedin'] = true;
-        $_SESSION['username'] = $username;
+        echo $username;
+        $con = mysqli_connect("us-cdbr-east-02.cleardb.com", "b74d7cacca644f", "96adc723");
+
+        mysqli_select_db($con, "heroku_8c6c26a69cb9c50");
+        $query = "SELECT * FROM heroku_8c6c26a69cb9c50.session_status WHERE status = 'session'";
+
+        if ( !( $result = mysqli_query($con, $query))) {
+            print("Could not execute query 1! <br />");
+            die();
+        }
+
+        if (mysqli_num_rows($result) == 0) {
+            $query = "INSERT INTO heroku_8c6c26a69cb9c50.session_status (status, loggedin, username) VALUES ('session', 1,"."'".$Username."'".")";
+            if ( !( $result = mysqli_query($con, $query))) {
+                print("Could not execute query 2! <br />");
+                die();
+            }
+        }
+        else {
+            $query = "DELETE FROM heroku_8c6c26a69cb9c50.session_status WHERE status = 'session'";
+            if ( !( $result = mysqli_query($con, $query))) {
+                print("Could not execute query 3! <br />");
+                die();
+            }
+            $query = "INSERT INTO heroku_8c6c26a69cb9c50.session_status (status, loggedin, username) VALUES ('session', 1,"."'".$Username."'".")";
+            if ( !( $result = mysqli_query($con, $query))) {
+                print("Could not execute query 4! <br />");
+                die();
+            }
+        }
+        // $_SESSION['loggedin'] = true;
+        // $_SESSION['username'] = $username;
 
         $query = "SELECT * FROM heroku_8c6c26a69cb9c50.users_history WHERE username = "."'".$username."'";
         $con = mysqli_connect("us-cdbr-east-02.cleardb.com", "b74d7cacca644f", "96adc723");
