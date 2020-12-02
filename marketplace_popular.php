@@ -59,7 +59,7 @@
          }
         $filt = substr($page, 1);
         $name = explode(".", $filt)[0];
-        $link = ".".$page;
+        $link = 'http://myozone.org/'.$page;
         echo '<tr><td><a href="'.$link.'"><strong>'.$name.'</strong></a></td></tr>';
         $count = $count + 1;
      }
