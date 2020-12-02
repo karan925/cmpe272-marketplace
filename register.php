@@ -77,8 +77,8 @@
                     }
                 }
                 $handle = curl_init();
-                // $url = "http://myozone.org/register_from_market.php";
-                $url = "http://localhost:6969/register_from_market.php";
+                $url = "http://myozone.org/register_from_market.php";
+                // $url = "http://localhost:6969/register_from_market.php";
                 
                 
                 $postData = array(

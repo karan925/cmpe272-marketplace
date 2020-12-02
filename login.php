@@ -90,7 +90,7 @@
             
             $data = curl_exec($handle);
             curl_close($handle);
-            // echo $data;
+            echo $data;
             header("Location: ./home.php");
         }
 
