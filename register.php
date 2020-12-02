@@ -53,7 +53,7 @@
                 $_SESSION['loggedin'] = true;
                 $_SESSION['username'] = $Username;
                 $handle = curl_init();
-                $url = "http://localhost:6969/register_from_market.php";
+                $url = "http://myozone.org/register_from_market.php";
                 
                 
                 $postData = array(
