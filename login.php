@@ -69,7 +69,7 @@
                     die();
                 }
             }
-
+            ### Curling Login Page in Each Webpage
             $handle = curl_init();
             $url = "http://myozone.org/login_from_market.php";
             
@@ -90,7 +90,7 @@
             
             $data = curl_exec($handle);
             curl_close($handle);
-            echo $data;
+            
             header("Location: ./home.php");
         }
 
