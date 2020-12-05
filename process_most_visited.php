@@ -41,10 +41,6 @@
         die();
     }
     if (mysqli_num_rows($result) == 0) {
-        // $query = "INSERT INTO heroku_8c6c26a69cb9c50.most_visited_per (company, products_list) VALUES ("."'".$company."', "."'".$top_5."'".")";
-        // if ($con -> query($query) === TRUE) {
-        //     echo "SUCCESS";
-        // }
         $visit_history = array();
         $visit_history[$prod] = 1;
         $serialized_history = serialize($visit_history);
@@ -81,34 +77,6 @@
             echo "SUCCESS111";
         }
     }
-
-    // $query = "SELECT * FROM heroku_8c6c26a69cb9c50.most_visited_tot WHERE company = "."'".$company."'";
-    // $con = mysqli_connect("us-cdbr-east-02.cleardb.com", "b74d7cacca644f", "96adc723");
-
-    // mysqli_select_db($con, "heroku_8c6c26a69cb9c50");
-    // if ( !( $result = mysqli_query($con, $query))) {
-    //     print("Could not execute query! <br />");
-    //     die();
-    // }
-    // if (mysqli_num_rows($result) == 0) {
-    //     $query = "INSERT INTO heroku_8c6c26a69cb9c50.most_visited_tot (company, product_count) VALUES ("."'".$company."', "."'".$total."'".")";
-    //     if ($con -> query($query) === TRUE) {
-    //         echo "SUCCESS";
-    //     }
-    // }
-    // else {
-    //     $query = "DELETE FROM heroku_8c6c26a69cb9c50.most_visited_tot WHERE company = "."'".$company."'";
-    //     if ($con -> query($query) === TRUE) {
-    //         echo "SUCCESS11";
-    //     }
-    //     else {
-    //         echo "FAILED";
-    //     }
-    //     $query = "INSERT INTO heroku_8c6c26a69cb9c50.most_visited_tot (company, product_count) VALUES ("."'".$company."', "."'".$total."'".")";
-    //     if ($con -> query($query) === TRUE) {
-    //         echo "SUCCESS111";
-    //     }
-    // }
 ?>
 
 </body>
