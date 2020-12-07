@@ -78,7 +78,7 @@
                 }
 
                 ### Curling Register Page in Each Webpage
-                $handle = curl_init();
+                // $handle = curl_init();
                 // $url = "http://myozone.org/register_from_market.php";
                 // $url1 = "https://liuj.us/register_from_market.php";
                 $url2 ="https://karantrucking.herokuapp.com/user.php";
@@ -93,6 +93,7 @@
                 );
                 
                 foreach( $urls as $u ){
+                    $handle = curl_init();
                     curl_setopt_array($handle,
                     array(
                         CURLOPT_URL => $u,
