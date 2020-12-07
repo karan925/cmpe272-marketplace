@@ -72,16 +72,18 @@
             ### Curling Login Page in Each Webpage
             $handle = curl_init();
             $url = "http://myozone.org/login_from_market.php";
-            
+            $url1 = "https://liuj.us/login_from_market.php";
+            $urls = array($url,$url1);
             
             $postData = array(
             'Username' => $Username,
             'Password'  => $Password
             );
             
+            foreach($urls as $u ){
             curl_setopt_array($handle,
             array(
-                CURLOPT_URL => $url,
+                CURLOPT_URL => $u,
                 CURLOPT_POST       => true,
                 CURLOPT_POSTFIELDS => $postData,
                 CURLOPT_RETURNTRANSFER     => true,
@@ -91,6 +93,8 @@
             $data = curl_exec($handle);
             curl_close($handle);
             
+            }
+
             header("Location: ./home.php");
         }
 
