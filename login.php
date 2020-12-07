@@ -73,7 +73,7 @@
             $handle = curl_init();
             $url = "http://myozone.org/login_from_market.php";
             $url1 = "https://liuj.us/login_from_market.php";
-            $url2 ="https://karantrucking.herokuapp.com/login.php";
+            $url2 ="https://karantrucking.herokuapp.com/login_from_market.php";
             $url3 = "http://cmpe272mustafay.com/hw/login_from_market.php";
             $urls = array($url,$url1, $url2, $url3);
             
