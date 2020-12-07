@@ -79,12 +79,12 @@
 
                 ### Curling Register Page in Each Webpage
                 $handle = curl_init();
-                $url = "http://myozone.org/register_from_market.php";
+                // $url = "http://myozone.org/register_from_market.php";
                 $url1 = "https://liuj.us/register_from_market.php";
-                $url2 ="https://karantrucking.herokuapp.com/user.php";
-                $url3 = "http://cmpe272mustafay.com/hw/register_from_market.php";
+                // $url2 ="https://karantrucking.herokuapp.com/user.php";
+                // $url3 = "http://cmpe272mustafay.com/hw/register_from_market.php";
                 // $url = "http://localhost:6969/register_from_market.php";
-                $urls = array($url,$url1, $url2, $url3);
+                $urls = array($url1);
                 
                 $postData = array(
                 'Username' => $Username,
@@ -106,7 +106,7 @@
                     curl_close($handle);
                     
                 }
-                // echo $data;
+                echo $data;
                 header("Location: ./home.php");
             }
             else {
