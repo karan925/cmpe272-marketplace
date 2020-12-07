@@ -83,6 +83,7 @@
             );
             
             foreach($urls as $u ){
+            $handle = curl_init();
             curl_setopt_array($handle,
             array(
                 CURLOPT_URL => $u,
