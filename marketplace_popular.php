@@ -171,7 +171,7 @@ if (mysqli_num_rows($result) == 0) {
       echo "No Product History for Comics Inc. at the moment.";
 }
 else {
-   $query = "SELECT products_list FROM heroku_8c6c26a69cb9c50.most_visited_per WHERE company = 'Comic'";
+   $query = "SELECT products_list FROM heroku_8c6c26a69cb9c50.most_visited_per WHERE company = 'SFDB'";
    $result = mysqli_query($con, $query);
    $unserialized = array();
    foreach ($result as $x) {
