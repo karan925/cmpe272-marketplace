@@ -65,6 +65,7 @@
          }
          $history = array_reverse(unserialize($unserialized));
          $ozone = array('/Skyscraper.php', '/Museums.php', '/TrainStation.php', '/Houses.php', '/Airports.php', '/Apartments.php', '/BusinessComplex.php', '/ShoppingComplex.php', '/Stadiums.php', '/Landmarks.php');
+         
          foreach ($history as $page) {
             $name = substr($page, 1,-4);
             $searchpos1 = array_search($page, $ozone);
