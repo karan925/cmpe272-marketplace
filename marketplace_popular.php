@@ -160,7 +160,7 @@ echo '<div class="Container">';
 echo '<div class="rpw">';
 echo '<div class="col-6 offset-2">';
 echo "<h4>Most Viewed Products at Comics Inc.</h4>";
-$query = "SELECT * FROM heroku_8c6c26a69cb9c50.most_visited_per WHERE company = 'Comic'";
+$query = "SELECT * FROM heroku_8c6c26a69cb9c50.most_visited_per WHERE company = 'SFDB'";
 $con = mysqli_connect("us-cdbr-east-02.cleardb.com", "b74d7cacca644f", "96adc723");
 mysqli_select_db($con, "heroku_8c6c26a69cb9c50");
 if ( !( $result = mysqli_query($con, $query))) {
