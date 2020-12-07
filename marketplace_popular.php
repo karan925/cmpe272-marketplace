@@ -74,7 +74,7 @@
    echo '<div class="rpw">';
    echo '<div class="col-6 offset-2">';
    echo "<h4>Most Viewed Products at Potato Inc.</h4>";
-   $query = "SELECT * FROM heroku_8c6c26a69cb9c50.most_visited_per WHERE company = 'Potato'";
+   $query = "SELECT * FROM heroku_8c6c26a69cb9c50.most_visited_per WHERE company = 'PotatoInc'";
    $con = mysqli_connect("us-cdbr-east-02.cleardb.com", "b74d7cacca644f", "96adc723");
    mysqli_select_db($con, "heroku_8c6c26a69cb9c50");
    if ( !( $result = mysqli_query($con, $query))) {
@@ -85,7 +85,7 @@
          echo "No Product History for Potato Inc. at the moment.";
    }
    else {
-      $query = "SELECT products_list FROM heroku_8c6c26a69cb9c50.most_visited_per WHERE company = 'Potato'";
+      $query = "SELECT products_list FROM heroku_8c6c26a69cb9c50.most_visited_per WHERE company = 'PotatoInc'";
       $result = mysqli_query($con, $query);
       $unserialized = array();
       foreach ($result as $x) {
