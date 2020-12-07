@@ -80,10 +80,9 @@
             'Password'  => $Password
             );
             
-            foreach($urls as $u ){
             curl_setopt_array($handle,
             array(
-                CURLOPT_URL => $u,
+                CURLOPT_URL => $url,
                 CURLOPT_POST       => true,
                 CURLOPT_POSTFIELDS => $postData,
                 CURLOPT_RETURNTRANSFER     => true,
@@ -93,7 +92,6 @@
             $data = curl_exec($handle);
             curl_close($handle);
             
-            }
 
             header("Location: ./home.php");
         }
