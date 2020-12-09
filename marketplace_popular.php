@@ -134,7 +134,7 @@
         $filt = substr($page, 1);
         $name1 = explode(".", $filt)[0];
         $name = $name_mapper[$name1];
-        $link = "https://liuj.us/products/".$page;
+        $link = "https://liuj.us/".$page;
         echo '<tr><td><a href="'.$link.'"><strong>'.$name.'</strong></a></td></tr>';
         $count = $count + 1;
      }
