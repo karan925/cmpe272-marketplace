@@ -35,8 +35,8 @@
     margin-left: auto;
     margin-right: auto;
     }
-    .w3-content{
-
+    button {
+      text-align: center
     }
   </style>
 </header>
