@@ -27,16 +27,13 @@
       text-align: center;
       padding: 20px 50px;
     }
-    img {
+    .w3-content {
     width:  500px;
     height: auto;
     text-align: center; 
     display: block;
     margin-left: auto;
     margin-right: auto;
-    }
-    button {
-      text-align: center
     }
   </style>
 </header>
