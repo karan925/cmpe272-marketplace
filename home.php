@@ -32,6 +32,38 @@
 <body>
 
   <h1>Welcome to AJKM Marketplace</h1>
+  <div class="w3-content w3-display-container">
+    <img class="mySlides" src="pics/cmp1.png" style="width:100%">
+    <img class="mySlides" src="pics/cmp2.png" style="width:100%">
+    <img class="mySlides" src="pics/cmp3.png" style="width:100%">
+    <img class="mySlides" src="pics/cmp4.png" style="width:100%">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    <?php  
+    echo '<script type="text/JavaScript">  
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>' ; 
+    ?> 
+  </div>
+
   <p>Pictures and stuff can go here.</p>
   <?php 
   $con = mysqli_connect("us-cdbr-east-02.cleardb.com", "b74d7cacca644f", "96adc723");
