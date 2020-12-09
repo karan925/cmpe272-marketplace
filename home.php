@@ -42,10 +42,9 @@
 
   <h1>Welcome to AJKM Marketplace</h1>
   <div class="w3-content w3-display-container">
-    <img class="mySlides" src="pics/cmp1.png">
-    <img class="mySlides" src="pics/cmp2.png">
-    <img class="mySlides" src="pics/cmp3.png">
-    <img class="mySlides" src="pics/cmp4.png">
+    <img class="mySlides" src="pics/car.jpg">
+    <img class="mySlides" src="pics/pot.jpg">
+    <img class="mySlides" src="pics/build.jpg">
 
     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
     <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
