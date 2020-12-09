@@ -22,10 +22,13 @@
   <a href="./authenticate.php">Log In/Sign Up</a>
   <a href="./logout.php">Log Out</a>
 </div>
+<style>
+  h1   {text-align: center}
+</style>
 </header>
 <body>
 
-<h1>AJKM Marketplace</h1>
+<h1>Welcome to AJKM Marketplace</h1>
 <p>Pictures and stuff can go here.</p>
 <?php 
       $con = mysqli_connect("us-cdbr-east-02.cleardb.com", "b74d7cacca644f", "96adc723");
