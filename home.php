@@ -31,7 +31,13 @@
     width:  500px;
     height: auto;
     text-align: center; 
-}
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .w3-content{
+
+    }
   </style>
 </header>
 <body>
