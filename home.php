@@ -29,7 +29,7 @@
     }
     .w3-content {
     width: 50%;
-    height: auto;
+    height: 50%;
     position: relative;
     text-align: center; 
     display: block;
