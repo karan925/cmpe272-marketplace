@@ -39,7 +39,7 @@
    $name_mapper['product8'] = '2016 BMW M3';
    $name_mapper['product9'] = '2019 BMW M6';
    $name_mapper['product10'] = '2019 Mercedes G-Wagon AMG';
-   $name_mapper['products/FontantPotato'] = 'Fondant Potato';
+   $name_mapper['products/FondantPotato'] = 'Fondant Potato';
    $name_mapper['products/RattePotato'] = 'Ratte Potato';
    $name_mapper['products/RedPotato'] = 'Red Potato';
    $name_mapper['products/Fries'] = 'French Fries';
