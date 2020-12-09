@@ -29,7 +29,7 @@
     }
     .w3-content {
     width: 50%;
-    height: 50%;
+    height: auto;
     position: relative;
     text-align: center; 
     display: block;
@@ -42,7 +42,7 @@
 
   <h1>Welcome to AJKM Marketplace</h1>
   <div class="w3-content w3-display-container">
-    <img class="mySlides" src="pics/car.jpg" width="100" height="100">
+    <img class="mySlides" src="pics/car.jpg" width="300" height="300">
     <img class="mySlides" src="pics/pot.jpg" width="300" height="300">
     <img class="mySlides" src="pics/build.jpg" width="300" height="300">
 
