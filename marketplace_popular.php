@@ -28,6 +28,37 @@
 
 <h3>Presentation of the top 5 products in the whole marketplace (most visits/best ratings etc.)</h3>
 <?php 
+   $name_mapper = array();
+   $name_mapper['product1'] = '2019 Porsche 911';
+   $name_mapper['product2'] = '2018 Mercedes-Benz AMG C63 S';
+   $name_mapper['product3'] = '2020 Tesla Roadster';
+   $name_mapper['product4'] = '2020 Audi R8 5.2 V10 Performance';
+   $name_mapper['product5'] = '2017 Ferrari 488 Spider Base';
+   $name_mapper['product6'] = '2019 Mclaren F1';
+   $name_mapper['product7'] = '2018 Lamborghini Aventador S';
+   $name_mapper['product8'] = '2016 BMW M3';
+   $name_mapper['product9'] = '2019 BMW M6';
+   $name_mapper['product10'] = '2019 Mercedes G-Wagon AMG';
+   $name_mapper['products/FontantPotato'] = 'Fondant Potato';
+   $name_mapper['products/RattePotato'] = 'Ratte Potato';
+   $name_mapper['products/RedPotato'] = 'Red Potato';
+   $name_mapper['products/Fries'] = 'French Fries';
+   $name_mapper['products/GreenPotato'] = 'Green Potato';
+   $name_mapper['products/RoastedPotato'] = 'Roasted Potato';
+   $name_mapper['products/KerrPotato'] = 'Kerr Potato';
+   $name_mapper['products/Vitelotte'] = 'Vitellote';
+   $name_mapper['products/PotatoJuice'] = 'Potato Juice';
+   $name_mapper['products/YukonPotato'] = 'Yukon Potato';
+   $name_mapper['hw/products/hw5_product1'] = 'A Scanner Darkly';
+   $name_mapper['hw/products/hw5_product2'] = 'Blade Runner: The Final Cut';
+   $name_mapper['hw/products/hw5_product3'] = 'Ghost in the Shell (2020 4k BD)';
+   $name_mapper['hw/products/hw5_product4'] = 'Minority Report';
+   $name_mapper['hw/products/hw5_product5'] = 'Psycho-Pass (BD/DVD Combo)';
+   $name_mapper['hw/products/hw5_product6'] = 'Do Androids Dream of Electric Sheep?';
+   $name_mapper['hw/products/hw5_product7'] = 'Dune';
+   $name_mapper['hw/products/hw5_product8'] = 'Neuromancer';
+   $name_mapper['hw/products/hw5_product9'] = 'The Foundation Trilogy';
+   $name_mapper['hw/products/hw5_product10'] = 'Ubik';
    echo '<div class="Container">';
    echo '<div class="rpw">';
    echo '<div class="col-6 offset-2">';
@@ -101,8 +132,9 @@
          break;
          }
         $filt = substr($page, 1);
-        $name = explode(".", $filt)[0];
-        $link = ".".$page;
+        $name1 = explode(".", $filt)[0];
+        $name = $name_mapper[$name1];
+        $link = "https://liuj.us/products/".$page;
         echo '<tr><td><a href="'.$link.'"><strong>'.$name.'</strong></a></td></tr>';
         $count = $count + 1;
      }
@@ -144,8 +176,9 @@ else {
       break;
       }
      $filt = substr($page, 1);
-     $name = explode(".", $filt)[0];
-     $link = ".".$page;
+     $name1 = explode(".", $filt)[0];
+     $name = $name_mapper[$name1];
+     $link = "https://karantrucking.herokuapp.com/".$page;
      echo '<tr><td><a href="'.$link.'"><strong>'.$name.'</strong></a></td></tr>';
      $count = $count + 1;
   }
@@ -187,8 +220,9 @@ else {
       break;
       }
      $filt = substr($page, 1);
-     $name = explode(".", $filt)[0];
-     $link = ".".$page;
+     $name1 = explode(".", $filt)[0];
+     $name = $name_mapper[$name1];
+     $link = "http://www.cmpe272mustafay.com/".$page;
      echo '<tr><td><a href="'.$link.'"><strong>'.$name.'</strong></a></td></tr>';
      $count = $count + 1;
   }
