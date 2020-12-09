@@ -22,6 +22,13 @@
     <a class = "active" href="./authenticate.php">Log In/Sign Up</a>
     <a href="./logout.php">Log Out</a>
   </div>
+
+  <style>
+    .Container
+    {
+      text-align: center;
+    }
+  </style>
 </header>
 <body>
 
@@ -47,6 +54,12 @@
       </div>
     </form>
   </div>
+
+  <?php
+  echo "<br>";
+  echo "<br>";
+  ?> 
+
 
   <h3 class="offset-4">Register if you don't have an account</h3>
   <div class="Container">

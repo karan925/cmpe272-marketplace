@@ -29,12 +29,12 @@
     }
     .w3-content {
       text-align:center;
+    }
+    img {
+      text-align:center;
       width:100%;
       display:block;
       margin:auto;
-    }
-    .mySlides {
-      text-align:center;
     }
   </style>
 </header>
