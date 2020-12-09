@@ -29,7 +29,8 @@
     }
     .w3-content {
     width: 50%;
-    min-height: 700px;
+    height: auto;
+    position: relative;
     text-align: center; 
     display: block;
     margin-left: auto;
