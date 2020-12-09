@@ -129,7 +129,7 @@
    }
    else {
       echo "Log in to see Visit History";
-      echo '<a href="./authenticate"><button>Log In Here!</button></a>';
+      echo '<a href="./authenticate.php"><button>Log In Here!</button></a>';
    }
 ?>
 
