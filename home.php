@@ -24,6 +24,7 @@
 </div>
 <style>
   h1   {text-align: center}
+  h1   padding: 20px 50px;
 </style>
 </header>
 <body>
