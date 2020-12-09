@@ -31,9 +31,8 @@
       text-align: center;
       width: 50%;
       height: auto;
-      display:block;
-      margin-left: auto;
-      margin-right: auto;
+      display: flex;
+      justify-content: center;
     }
   </style>
 </header>
