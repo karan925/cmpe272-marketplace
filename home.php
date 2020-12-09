@@ -28,9 +28,9 @@
       padding: 20px 50px;
     }
     img {
-    float: left;
-    width:  100px;
-    height: 100px;
+    float: center;
+    width:  500px;
+    height: 500px;
     object-fit: cover;
 }
   </style>
