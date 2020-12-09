@@ -28,12 +28,10 @@
       padding: 20px 50px;
     }
     .w3-content {
-      text-align: center;
-      display: block;
-    }
-    img{
-      text-align: center;
-      display: block;
+      text-align:center;
+      width:100%;
+      display:block;
+      margin:auto;
     }
   </style>
 </header>
