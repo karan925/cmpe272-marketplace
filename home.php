@@ -33,6 +33,9 @@
       display:block;
       margin:auto;
     }
+    .mySlides {
+      text-align:center;
+    }
   </style>
 </header>
 <body>
