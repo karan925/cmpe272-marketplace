@@ -28,10 +28,12 @@
       padding: 20px 50px;
     }
     .w3-content {
-    width: 50%;
-    height: auto;
-    display:block;
-    text-align: center;
+      text-align: center;
+      width: 50%;
+      height: auto;
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 </header>
