@@ -28,10 +28,9 @@
       padding: 20px 50px;
     }
     img {
-    float: center;
     width:  500px;
-    height: 500px;
-    object-fit: cover;
+    height: auto;
+    text-align: center; 
 }
   </style>
 </header>
