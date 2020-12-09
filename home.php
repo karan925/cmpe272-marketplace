@@ -28,8 +28,8 @@
       padding: 20px 50px;
     }
     .w3-content {
-    width: 50%;
-    height: 50%;
+    width: 300;
+    height: 300;
     position: relative;
     text-align: center; 
     display: block;
