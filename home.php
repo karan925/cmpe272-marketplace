@@ -31,6 +31,10 @@
       text-align: center;
       display: block;
     }
+    img{
+      text-align: center;
+      display: block;
+    }
   </style>
 </header>
 <body>
