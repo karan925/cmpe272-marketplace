@@ -32,7 +32,6 @@
     height: auto;
     position: relative;
     text-align: center; 
-    display: block;
     margin-left: auto;
     margin-right: auto;
     }
@@ -42,9 +41,9 @@
 
   <h1>Welcome to AJKM Marketplace</h1>
   <div class="w3-content w3-display-container">
-    <img class="mySlides" src="pics/car.jpg" width="300" height="300">
-    <img class="mySlides" src="pics/pot.jpg" width="300" height="300">
-    <img class="mySlides" src="pics/build.jpg" width="300" height="300">
+    <img class="mySlides" src="pics/car.jpg" width="400" height="400">
+    <img class="mySlides" src="pics/pot.jpg" width="400" height="400">
+    <img class="mySlides" src="pics/build.jpg" width="400" height="400">
 
     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
     <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
