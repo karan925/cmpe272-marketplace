@@ -30,10 +30,8 @@
     .w3-content {
     width: 50%;
     height: auto;
-    position: relative;
-    text-align: center; 
-    margin-left: auto;
-    margin-right: auto;
+    display:block;
+    text-align: center;
     }
   </style>
 </header>
