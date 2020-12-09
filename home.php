@@ -28,7 +28,7 @@
       padding: 20px 50px;
     }
     .w3-content {
-    width:  500px;
+    width: 50%;
     height: auto;
     text-align: center; 
     display: block;
