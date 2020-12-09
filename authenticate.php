@@ -27,6 +27,7 @@
     .Container
     {
       text-align: center;
+      padding: 20px 50px;
     }
   </style>
 </header>
