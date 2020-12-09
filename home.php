@@ -27,16 +27,22 @@
       text-align: center;
       padding: 20px 50px;
     }
+    img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
   </style>
 </header>
 <body>
 
   <h1>Welcome to AJKM Marketplace</h1>
   <div class="w3-content w3-display-container">
-    <img class="mySlides" src="pics/cmp1.png" style="width:100%">
-    <img class="mySlides" src="pics/cmp2.png" style="width:100%">
-    <img class="mySlides" src="pics/cmp3.png" style="width:100%">
-    <img class="mySlides" src="pics/cmp4.png" style="width:100%">
+    <img class="mySlides" src="pics/cmp1.png">
+    <img class="mySlides" src="pics/cmp2.png">
+    <img class="mySlides" src="pics/cmp3.png">
+    <img class="mySlides" src="pics/cmp4.png">
 
     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
     <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
