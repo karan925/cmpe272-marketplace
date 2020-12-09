@@ -32,8 +32,8 @@
     }
     img {
       text-align:center;
-      width: 50%;
-      height: 50%;
+      width: 30%;
+      height: 30%;
       display:block;
       margin:auto;
     }
