@@ -39,15 +39,13 @@
         echo 'connection is stable <br>';
         $sql = "SELECT product FROM heroku_8c6c26a69cb9c50.products WHERE company='PotatoInc'";
         //^connection works
-        $result = mysqli_query($conn, $sql);
-        if($result){
+        if($result = $conn->query($sql)){
           echo 'query is stable <br>';
-          while($row = mysqli_fetch_assoc($result)) {
-            echo 'fetch data block ';
-            echo $row['product'];
-            echo '<br>'
+          while($row = $result->fetch_assoc()) {
+            printf($row["product"]);
           }
         }
+        $conn->close();
 ?>
   
 
