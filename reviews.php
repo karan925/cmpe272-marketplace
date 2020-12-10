@@ -36,14 +36,15 @@
         if ($conn->connect_error) {
           die("Connection failed: " . $conn->connect_error);
         }
-        echo 'connection is stable <br>';
+
         $sql = "SELECT product FROM heroku_8c6c26a69cb9c50.products WHERE company='PotatoInc'";
         //^connection works
         if($result = $conn->query($sql)){
-          echo 'query is stable <br>';
+          echo '<ul>'
           while($row = $result->fetch_assoc()) {
-            printf($row["product"]);
+            printf('<li>'.$row["product"].'</li>');
           }
+          echo '</ul>'
         }
         $conn->close();
 ?>
