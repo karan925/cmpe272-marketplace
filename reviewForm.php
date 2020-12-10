@@ -30,10 +30,16 @@
 		background-color:#031e79;
 		cursor:pointer;
 		padding: 10px, 12px;
+		color:white;
 
 	}
 	input[type=submit]:hover {
   		background-color: #15349e;
+	}
+	form {
+  	border-radius: 5px;
+  	background-color: #f2f2f2;
+  	padding: 20px;
 	}
 </style>
 </header>
