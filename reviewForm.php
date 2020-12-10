@@ -19,7 +19,11 @@
 		</div>
 <style>
 	input[type=radio] {
-
+		margin-left:24px;
+		padding: 5px;
+	}
+	textarea{
+		margin-left: 24px;
 	}
 	input[type=submit] {
 		width:240px;
