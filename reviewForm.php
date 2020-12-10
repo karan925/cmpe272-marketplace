@@ -17,13 +17,27 @@
 		<a href="./authenticate.php">Log In/Sign Up</a>
 		<a href="./logout.php">Log Out</a>
 		</div>
+<style>
+	input[type=radio] {
 
+	}
+	input[type=submit] {
+		width:240px;
+		background-color:#031e79;
+		cursor:pointer;
+		padding: 10px, 12px;
+
+	}
+	input[type=submit]:hover {
+  		background-color: #15349e;
+	}
+</style>
 </header>
 <body>
 
 	<h1> Submit a Review </h1>
 	<form id="reviewForm">
-		<div class="input-group mb-3">
+		<div>
 			<label for="ratings"><Strong>Please Choose a Rating</Strong></label>
 			<br>
 			<input type="radio" name="ratings" id="one" value="one">
