@@ -48,16 +48,27 @@
 
 
 <?php 
+        /**
+        * Establishing mysql connection
+        */
         $conn = new mysqli("us-cdbr-east-02.cleardb.com", "b74d7cacca644f", "96adc723","heroku_8c6c26a69cb9c50");
         if ($conn->connect_error) {
           die("Connection failed: " . $conn->connect_error);
         }
 
+        /**
+        * One SQL query for each company 
+        */
         $sql = "SELECT company, product FROM heroku_8c6c26a69cb9c50.products WHERE company='PotatoInc'";
         $sql2 = "SELECT company, product FROM heroku_8c6c26a69cb9c50.products WHERE company='Ozone'";
         $sql3 = "SELECT company, product FROM heroku_8c6c26a69cb9c50.products WHERE company='SFDB'";
         $sql4 = "SELECT company, product FROM heroku_8c6c26a69cb9c50.products WHERE company='KaranT'";
-        //^connection works
+        
+        /**
+        * Code divided into Row/Col Each company has indiv. column for products
+        * printF to generate base layout 
+        * fetch_assoc() handles query by row useful if we need a print of every element
+        */
         printf('<div class="row">');
         if($result = $conn->query($sql)){
           printf('<div class="col">');
@@ -106,6 +117,13 @@
 
         printf('<div>');
         $conn->close();
+
+        /**
+        *@param $comp is the company name
+        *@param $prod is the product name
+        *uses base64_encode(serialize()) for safe serialization 
+        * without this it creates byte inconsistency errors 
+        */
         function handleQuery($comp, $prod){
           $prod_info = array($comp,$prod);
             $prod_info =  base64_encode(serialize($prod_info));

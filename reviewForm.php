@@ -51,6 +51,11 @@
 
 	<h1> Submit a Review </h1>
 <?php  
+	/**
+	* Retrieve product from reviews.php file 
+	* product_info[0] = company name
+	* product_info[1] = product name
+	*/
 	$product_info = $_GET['prod'];
 	$product_info = unserialize(base64_decode($product_info));
 ?>
