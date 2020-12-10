@@ -6,6 +6,7 @@
 <body>
 	<form id="reviewForm">
 		<div class="input-group mb-3">
+		<label for="ratings">Please Choose a Rating</label>
 		<input type="radio" name="ratings" id="one" value="one">
 		<label for="one">One</label>
 		<input type="radio" name="ratings" id="two" value="two">
@@ -17,7 +18,10 @@
 		<input type="radio" name="ratings" id="five" value="five">
 		<label for="five">Five</label>
 		<br>
-		<textarea form="reviewForm" rows="4" cols="50" name="review"/>
+		<label for="review"><Strong>Please Submit a Review</Strong></label>
+		<textarea form="reviewForm" rows="4" cols="50" name="review" id="review">
+			Enter Review Here. 	
+		</textarea>	
 		<input type="submit"> 
 	</form>
 </body>
