@@ -70,8 +70,7 @@
             $comp = $row["company"]; $prod = $row["product"];
             $prod_info = array($comp,$prod);
             $prod_info =  base64_encode(serialize($prod_info));
-            printf($comp.' '.$prod);
-            printf('<a href="./testForm.php?prod='.$prod_info.'"><li>'.$row["product"].'</li></a>');
+            printf('<a href="./reviewForm.php?prod='.$prod_info.'"><li>'.$row["product"].'</li></a>');
           }
           printf('</ul>');
           printf('</div>');
@@ -84,8 +83,7 @@
             $comp = $row["company"]; $prod = $row["product"];
             $prod_info = array($comp,$prod);
             $prod_info =  base64_encode(serialize($prod_info));
-            printf($comp.' '.$prod);
-            printf('<a href="./testForm.php?prod='.$prod_info.'"><li>'.$row["product"].'</li></a>');
+            printf('<a href="./reviewForm.php?prod='.$prod_info.'"><li>'.$row["product"].'</li></a>');
           }
           printf('</ul>');
           printf('</div>');
@@ -98,8 +96,7 @@
             $comp = $row["company"]; $prod = $row["product"];
             $prod_info = array($comp,$prod);
             $prod_info =  base64_encode(serialize($prod_info));
-            printf($comp.' '.$prod);
-            printf('<a href="./testForm.php?prod='.$prod_info.'"><li>'.$row["product"].'</li></a>');
+            printf('<a href="./reviewForm.php?prod='.$prod_info.'"><li>'.$row["product"].'</li></a>');
           }
           printf('</ul>');
           printf('</div>');
@@ -112,8 +109,7 @@
             $comp = $row["company"]; $prod = $row["product"];
             $prod_info = array($comp,$prod);
             $prod_info =  base64_encode(serialize($prod_info));
-            printf($comp.' '.$prod);
-            printf('<a href="./testForm.php?prod='.$prod_info.'"><li>'.$row["product"].'</li></a>');
+            printf('<a href="./reviewForm.php?prod='.$prod_info.'"><li>'.$row["product"].'</li></a>');
           }
           printf('</ul>');
           printf('</div>');
