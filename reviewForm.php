@@ -16,7 +16,8 @@
 		<label for="four">Four</label>
 		<input type="radio" name="ratings" id="five" value="five">
 		<label for="five">Five</label>
-		<textarea form="reviewForm" rows="4" cols="50" name="review">
+		<br>
+		<textarea form="reviewForm" rows="4" cols="50" name="review"/>
 		<input type="submit"> 
 	</form>
 </body>
