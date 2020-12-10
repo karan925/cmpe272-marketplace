@@ -40,6 +40,7 @@
   	border-radius: 5px;
   	background-color: #f2f2f2;
   	padding: 20px;
+
 	}
 	label{
 		margin-left:24px;
@@ -68,7 +69,7 @@
 			<br>
 			<label for="review"><Strong>Please Submit a Review</Strong></label>
 			<br>
-			<textarea form="reviewForm" rows="4" cols="50" name="review" id="review">Enter Review Here.	
+			<textarea form="reviewForm" rows="4" cols="50" name="review" id="review">	
 			</textarea>	
 		</div>
 		<br>
