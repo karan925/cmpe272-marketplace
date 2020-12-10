@@ -27,6 +27,7 @@
 
 <h3>Choose a product and add a review or view a review</h3>
 <p>Functionality that allows user to choose any product in the marketplace and rate it will go here.</p>
+ <a href="./reviewForm.php">Submit a Review</a>
 
 
 
