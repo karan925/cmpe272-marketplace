@@ -37,14 +37,6 @@
         if ($conn->connect_error) {
           die("Connection failed: " . $conn->connect_error);
         }
-        $result = mysqli_query($conn, $sql);
-        if($result){
-          echo '<ul>PotatoInc Products</ul>'
-          while($row=mysqli_fetch_asoc($result)){
-            echo '<li>'.$row['products'].'</li>'
-            echo '<br>';
-          }
-        }
 ?>
   
 
