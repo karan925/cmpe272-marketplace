@@ -32,19 +32,19 @@
 
 
 <?php 
-        $sql = "SELECT * FROM heroku_8c6c26a69cb9c50.products WHERE company='PotatoInc'";
         $conn = new mysqli("us-cdbr-east-02.cleardb.com", "b74d7cacca644f", "96adc723","heroku_8c6c26a69cb9c50");
         if ($conn->connect_error) {
           die("Connection failed: " . $conn->connect_error);
         }
-        extract($_POST);
+
+        $sql = "SELECT * FROM heroku_8c6c26a69cb9c50.products WHERE company='PotatoInc'";
         $result = mysqli_query($conn, $sql);
         if($result){
-          echo '<ul>PotatoInc Products</ul>'
-          while($row=mysqli_fetch_asoc($result)){
+          echo '<ul style="line-height:150%">'
+          while($row=mysqli_fetch_assoc($result)){
             echo '<li>'.$row['products'].'</li>'
-            echo '<br>';
           }
+          echo '</ul>'
         }
 ?>
   
