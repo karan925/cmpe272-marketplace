@@ -109,7 +109,7 @@
         function handleQuery($comp, $prod){
           $prod_info = array($comp,$prod);
             $prod_info =  base64_encode(serialize($prod_info));
-            printf('<a href="./testForm.php?prod='.$prod_info.'"><li>'.$prod.'</li></a>');
+            printf('<a href="./reviewForm.php?prod='.$prod_info.'"><li>'.$prod.'</li></a>');
         }
 ?>
 
