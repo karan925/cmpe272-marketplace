@@ -46,7 +46,7 @@
    $name_mapper['products/GreenPotato'] = 'Green Potato';
    $name_mapper['products/RoastedPotato'] = 'Roasted Potato';
    $name_mapper['products/KerrPotato'] = 'Kerr Potato';
-   $name_mapper['products/Vitelotte'] = 'Vitellote';
+   $name_mapper['products/Vitelotte'] = 'Vitelotte';
    $name_mapper['products/PotatoJuice'] = 'Potato Juice';
    $name_mapper['products/YukonPotato'] = 'Yukon Potato';
    $name_mapper['hw/products/hw5_product1'] = 'A Scanner Darkly';

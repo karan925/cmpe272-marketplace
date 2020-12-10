@@ -38,7 +38,11 @@
         }
 
         $sql = "SELECT product FROM heroku_8c6c26a69cb9c50.products WHERE company='PotatoInc'";
+        $sql2 = "SELECT product FROM heroku_8c6c26a69cb9c50.products WHERE company='Ozone'";
+        $sql3 = "SELECT product FROM heroku_8c6c26a69cb9c50.products WHERE company='SFDB'";
+        $sql4 = "SELECT product FROM heroku_8c6c26a69cb9c50.products WHERE company='KaranT'";
         //^connection works
+        printf('<div>');
         if($result = $conn->query($sql)){
           printf('<ul>');
           while($row = $result->fetch_assoc()) {
@@ -46,6 +50,29 @@
           }
           printf('</ul>');
         }
+        if($result = $conn->query($sql2)){
+          printf('<ul>');
+          while($row = $result->fetch_assoc()) {
+            printf('<a href="./reviewForm.php"><li>'.$row["product"].'</li></a>');
+          }
+          printf('</ul>');
+        }
+        if($result = $conn->query($sql3)){
+          printf('<ul>');
+          while($row = $result->fetch_assoc()) {
+            printf('<a href="./reviewForm.php"><li>'.$row["product"].'</li></a>');
+          }
+          printf('</ul>');
+        }
+        if($result = $conn->query($sql4)){
+          printf('<ul>');
+          while($row = $result->fetch_assoc()) {
+            printf('<a href="./reviewForm.php"><li>'.$row["product"].'</li></a>');
+          }
+          printf('</ul>');
+        }
+
+        printf('<div>');
         $conn->close();
 ?>
   
