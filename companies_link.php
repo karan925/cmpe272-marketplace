@@ -35,7 +35,79 @@
 </nav>
 
 <h5>Information about top 5 products for <strong>each</strong> company will go here. Or they can go on the home page.</h5>
+<?php 
+        $conn = new mysqli("us-cdbr-east-02.cleardb.com", "b74d7cacca644f", "96adc723","heroku_8c6c26a69cb9c50");
+        if ($conn->connect_error) {
+          die("Connection failed: " . $conn->connect_error);
+        }
 
+        $sql = "SELECT item, score FROM(SELECT item, score FROM heroku_8c6c26a69cb9c50.rating WHERE siteholder='PotatoInc')a
+                ORDER BY score DESC LIMIT 5";
+        $sql2 = "SELECT item, score FROM(SELECT item, score FROM heroku_8c6c26a69cb9c50.rating WHERE siteholder='Ozone')a
+                ORDER BY score DESC LIMIT 5";
+        $sql3 = "SELECT item, score FROM(SELECT item, score FROM heroku_8c6c26a69cb9c50.rating WHERE siteholder='SFDB')a
+                ORDER BY score DESC LIMIT 5";
+        $sql4 = "SELECT item, score FROM(SELECT item, score FROM heroku_8c6c26a69cb9c50.rating WHERE siteholder='KaranT')a
+                ORDER BY score DESC LIMIT 5";
+        printf('<div class="row">');
+        if($result = $conn->query($sql)){
+
+          printf('<div class="col">');
+          printf('<ul>');
+          printf('<h2>Potato Inc Products</h2>');
+          while($row = $result->fetch_assoc()) {
+            $prod = $row["item"]; $rating = strval($row["score"]);
+            printf($prod.' '.$rating);
+            printf('<br>');
+          }
+          printf('</ul>');
+          printf('</div>');
+        }
+        if($result = $conn->query($sql2)){
+
+          printf('<div class="col">');
+          printf('<ul>');
+          printf('<h2>Ozone Products</h2>');
+          while($row = $result->fetch_assoc()) {
+            $prod = $row["item"]; $rating = strval($row["score"]);
+            printf($prod.' '.$rating);
+            printf('<br>');
+          }
+          printf('</ul>');
+          printf('</div>');
+        }
+        if($result = $conn->query($sql3)){
+
+          printf('<div class="col">');
+          printf('<ul>');
+          printf('<h2>SFDB Products</h2>');
+          while($row = $result->fetch_assoc()) {
+            $prod = $row["item"]; $rating = strval($row["score"]);
+            printf($prod.' '.$rating);
+            printf('<br>');
+          }
+          printf('</ul>');
+          printf('</div>');
+        }
+        if($result = $conn->query($sql4)){
+
+          printf('<div class="col">');
+          printf('<ul>');
+          printf('<h2>Karan Trucking Products</h2>');
+          while($row = $result->fetch_assoc()) {
+            $prod = $row["item"]; $rating = strval($row["score"]);
+            printf($prod.' '.$rating);
+            printf('<br>');
+          }
+          printf('</ul>');
+          printf('</div>');
+        }
+        
+
+        printf('<div>');
+        $conn->close();
+
+?>
 
 
 </body>
