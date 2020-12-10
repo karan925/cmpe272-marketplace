@@ -36,14 +36,16 @@
         if ($conn->connect_error) {
           die("Connection failed: " . $conn->connect_error);
         }
-        echo 'connection is stable';
+        echo 'connection is stable <br>';
         $sql = "SELECT * FROM heroku_8c6c26a69cb9c50.products WHERE company='PotatoInc'";
         //^connection works
         $result = mysqli_query($conn, $sql);
         if($result){
-          echo 'query is stable';
+          echo 'query is stable <br>';
           while($row = mysqli_fetch_assoc($result)) {
-            echo 'fetch data block';
+            echo 'fetch data block ';
+            echo $row['product'];
+            echo '<br>'
           }
         }
 ?>
