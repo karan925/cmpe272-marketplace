@@ -38,7 +38,11 @@
         }
 
         $sql = "SELECT * FROM heroku_8c6c26a69cb9c50.products WHERE company='PotatoInc'";
-        
+        //^connection works
+        $result = mysqli_query($conn, $sql);
+        if($result){
+          echo 'query test';
+        }
 ?>
   
 
