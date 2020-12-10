@@ -44,10 +44,7 @@
 </header>
 <body>
 
-<h3>Choose a product and add a review or view a review</h3>
-<p>Functionality that allows user to choose any product in the marketplace and rate it will go here.</p>
- <a href="./reviewForm.php">Submit a Review</a>
-
+<h3>Choose a product to add a review and rating</h3>
 
 
 <?php 
@@ -68,9 +65,7 @@
           printf('<h2>Potato Inc Products</h2>');
           while($row = $result->fetch_assoc()) {
             $comp = $row["company"]; $prod = $row["product"];
-            $prod_info = array($comp,$prod);
-            $prod_info =  base64_encode(serialize($prod_info));
-            printf('<a href="./reviewForm.php?prod='.$prod_info.'"><li>'.$row["product"].'</li></a>');
+            handleQuery($comp, $prod);
           }
           printf('</ul>');
           printf('</div>');
@@ -81,9 +76,7 @@
           printf('<h2>Ozone Products</h2>');
           while($row = $result->fetch_assoc()) {
             $comp = $row["company"]; $prod = $row["product"];
-            $prod_info = array($comp,$prod);
-            $prod_info =  base64_encode(serialize($prod_info));
-            printf('<a href="./reviewForm.php?prod='.$prod_info.'"><li>'.$row["product"].'</li></a>');
+            handleQuery($comp, $prod);
           }
           printf('</ul>');
           printf('</div>');
@@ -94,9 +87,7 @@
           printf('<h2>SFDB Products</h2>');
           while($row = $result->fetch_assoc()) {
             $comp = $row["company"]; $prod = $row["product"];
-            $prod_info = array($comp,$prod);
-            $prod_info =  base64_encode(serialize($prod_info));
-            printf('<a href="./reviewForm.php?prod='.$prod_info.'"><li>'.$row["product"].'</li></a>');
+            handleQuery($comp, $prod);
           }
           printf('</ul>');
           printf('</div>');
@@ -107,9 +98,7 @@
           printf('<h2>Karan Trucking Products</h2>');
           while($row = $result->fetch_assoc()) {
             $comp = $row["company"]; $prod = $row["product"];
-            $prod_info = array($comp,$prod);
-            $prod_info =  base64_encode(serialize($prod_info));
-            printf('<a href="./reviewForm.php?prod='.$prod_info.'"><li>'.$row["product"].'</li></a>');
+            handleQuery($comp, $prod);
           }
           printf('</ul>');
           printf('</div>');
@@ -117,8 +106,12 @@
 
         printf('<div>');
         $conn->close();
+        function handleQuery($comp, $prod){
+          $prod_info = array($comp,$prod);
+            $prod_info =  base64_encode(serialize($prod_info));
+            printf('<a href="./testForm.php?prod='.$prod_info.'"><li>'.$prod.'</li></a>');
+        }
 ?>
-  
 
 
 </body>
