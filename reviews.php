@@ -38,14 +38,7 @@
         }
 
         $sql = "SELECT * FROM heroku_8c6c26a69cb9c50.products WHERE company='PotatoInc'";
-        $result = mysqli_query($conn, $sql);
-        if($result){
-          echo '<ul style="line-height:150%">'
-          while($row=mysqli_fetch_assoc($result)){
-            echo '<li>'.$row['products'].'</li>'
-          }
-          echo '</ul>'
-        }
+        
 ?>
   
 
