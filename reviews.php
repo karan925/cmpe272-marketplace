@@ -12,6 +12,25 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
    <link rel="stylesheet" href="style.css">
+<style>
+  * {
+  box-sizing: border-box;
+}
+  ul{
+    line-height:150%;
+  }
+  .col{
+    float:left;
+    width:25%;
+    padding:10px;
+
+  }
+  .row:after{
+    content:"";
+    display:table;
+    clear:both;
+  }
+</style>
 
 <div class="topnav">
   <a href="./home.php">Home</a>
@@ -42,34 +61,46 @@
         $sql3 = "SELECT product FROM heroku_8c6c26a69cb9c50.products WHERE company='SFDB'";
         $sql4 = "SELECT product FROM heroku_8c6c26a69cb9c50.products WHERE company='KaranT'";
         //^connection works
-        printf('<div>');
+        printf('<div class="row">');
         if($result = $conn->query($sql)){
+          printf('<div class="col">');
           printf('<ul>');
+          printf('<h2>Potato Inc Products</h2>');
           while($row = $result->fetch_assoc()) {
             printf('<a href="./reviewForm.php"><li>'.$row["product"].'</li></a>');
           }
           printf('</ul>');
+          printf('</div>');
         }
         if($result = $conn->query($sql2)){
+          printf('<div class="col">');
           printf('<ul>');
+          printf('<h2>Ozone Products</h2>');
           while($row = $result->fetch_assoc()) {
             printf('<a href="./reviewForm.php"><li>'.$row["product"].'</li></a>');
           }
           printf('</ul>');
+          printf('</div>');
         }
         if($result = $conn->query($sql3)){
+          printf('<div class="col">');
           printf('<ul>');
+          printf('<h2>SFDB Products</h2>');
           while($row = $result->fetch_assoc()) {
             printf('<a href="./reviewForm.php"><li>'.$row["product"].'</li></a>');
           }
           printf('</ul>');
+          printf('</div>');
         }
         if($result = $conn->query($sql4)){
+          printf('<div class="col">');
           printf('<ul>');
+          printf('<h2>Karan Trucking Products</h2>');
           while($row = $result->fetch_assoc()) {
             printf('<a href="./reviewForm.php"><li>'.$row["product"].'</li></a>');
           }
           printf('</ul>');
+          printf('</div>');
         }
 
         printf('<div>');
