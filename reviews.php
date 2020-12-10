@@ -40,11 +40,11 @@
         $sql = "SELECT product FROM heroku_8c6c26a69cb9c50.products WHERE company='PotatoInc'";
         //^connection works
         if($result = $conn->query($sql)){
-          echo '<ul>'
+          printf('<ul>');
           while($row = $result->fetch_assoc()) {
-            printf('<li>'.$row["product"].'</li>');
+            printf('<a href="./reviewForm.php"><li>'.$row["product"].'</li></a>');
           }
-          echo '</ul>'
+          printf('</ul>');
         }
         $conn->close();
 ?>
