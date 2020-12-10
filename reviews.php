@@ -56,10 +56,10 @@
           die("Connection failed: " . $conn->connect_error);
         }
 
-        $sql = "SELECT product FROM heroku_8c6c26a69cb9c50.products WHERE company='PotatoInc'";
-        $sql2 = "SELECT product FROM heroku_8c6c26a69cb9c50.products WHERE company='Ozone'";
-        $sql3 = "SELECT product FROM heroku_8c6c26a69cb9c50.products WHERE company='SFDB'";
-        $sql4 = "SELECT product FROM heroku_8c6c26a69cb9c50.products WHERE company='KaranT'";
+        $sql = "SELECT company, product FROM heroku_8c6c26a69cb9c50.products WHERE company='PotatoInc'";
+        $sql2 = "SELECT company, product FROM heroku_8c6c26a69cb9c50.products WHERE company='Ozone'";
+        $sql3 = "SELECT company, product FROM heroku_8c6c26a69cb9c50.products WHERE company='SFDB'";
+        $sql4 = "SELECT company, product FROM heroku_8c6c26a69cb9c50.products WHERE company='KaranT'";
         //^connection works
         printf('<div class="row">');
         if($result = $conn->query($sql)){
@@ -67,7 +67,11 @@
           printf('<ul>');
           printf('<h2>Potato Inc Products</h2>');
           while($row = $result->fetch_assoc()) {
-            printf('<a href="./reviewForm.php"><li>'.$row["product"].'</li></a>');
+            $comp = $row["company"]; $prod = $row["product"];
+            $prod_info = array($comp,$prod);
+            $prod_info =  base64_encode(serialize($prod_info));
+            printf($comp.' '.$prod);
+            printf('<a href="./testForm.php?prod='.$prod_info.'"><li>'.$row["product"].'</li></a>');
           }
           printf('</ul>');
           printf('</div>');
@@ -77,7 +81,11 @@
           printf('<ul>');
           printf('<h2>Ozone Products</h2>');
           while($row = $result->fetch_assoc()) {
-            printf('<a href="./reviewForm.php"><li>'.$row["product"].'</li></a>');
+            $comp = $row["company"]; $prod = $row["product"];
+            $prod_info = array($comp,$prod);
+            $prod_info =  base64_encode(serialize($prod_info));
+            printf($comp.' '.$prod);
+            printf('<a href="./testForm.php?prod='.$prod_info.'"><li>'.$row["product"].'</li></a>');
           }
           printf('</ul>');
           printf('</div>');
@@ -87,7 +95,11 @@
           printf('<ul>');
           printf('<h2>SFDB Products</h2>');
           while($row = $result->fetch_assoc()) {
-            printf('<a href="./reviewForm.php"><li>'.$row["product"].'</li></a>');
+            $comp = $row["company"]; $prod = $row["product"];
+            $prod_info = array($comp,$prod);
+            $prod_info =  base64_encode(serialize($prod_info));
+            printf($comp.' '.$prod);
+            printf('<a href="./testForm.php?prod='.$prod_info.'"><li>'.$row["product"].'</li></a>');
           }
           printf('</ul>');
           printf('</div>');
@@ -97,7 +109,11 @@
           printf('<ul>');
           printf('<h2>Karan Trucking Products</h2>');
           while($row = $result->fetch_assoc()) {
-            printf('<a href="./reviewForm.php"><li>'.$row["product"].'</li></a>');
+            $comp = $row["company"]; $prod = $row["product"];
+            $prod_info = array($comp,$prod);
+            $prod_info =  base64_encode(serialize($prod_info));
+            printf($comp.' '.$prod);
+            printf('<a href="./testForm.php?prod='.$prod_info.'"><li>'.$row["product"].'</li></a>');
           }
           printf('</ul>');
           printf('</div>');

@@ -50,8 +50,16 @@
 <body>
 
 	<h1> Submit a Review </h1>
+<?php  
+	$product_info = $_GET['prod'];
+	$product_info = unserialize(base64_decode($product_info));
+?>
 	<form id="reviewForm">
 		<div>
+			<?php
+			echo '<h3>'.$product_info[0].'</h3>';	
+			echo '<h4>Product: '.$product_info[1].'</h4>';
+			?>
 			<label for="ratings"><Strong>Please Choose a Rating</Strong></label>
 			<br>
 			<input type="radio" name="ratings" id="one" value="one">
