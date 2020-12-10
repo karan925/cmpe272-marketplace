@@ -4,7 +4,7 @@
 	<h1> Submit a Review </h1>
 </header>
 <body>
-	<form>
+	<form id="reviewForm">
 		<div class="input-group mb-3">
 		<input type="radio" name="ratings" id="one" value="one">
 		<label for="one">One</label>
@@ -16,7 +16,8 @@
 		<label for="four">Four</label>
 		<input type="radio" name="ratings" id="five" value="five">
 		<label for="five">Five</label>
-
+		<textarea form="reviewForm" rows="4" cols="50" name="review">
+		<input type="submit"> 
 	</form>
 </body>
 </html>
