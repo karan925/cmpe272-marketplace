@@ -31,7 +31,7 @@
 		cursor:pointer;
 		padding: 10px, 12px;
 		color:white;
-
+		margin-left:24px;
 	}
 	input[type=submit]:hover {
   		background-color: #15349e;
@@ -40,6 +40,9 @@
   	border-radius: 5px;
   	background-color: #f2f2f2;
   	padding: 20px;
+	}
+	label{
+		margin-left:24px;
 	}
 </style>
 </header>
