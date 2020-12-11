@@ -49,6 +49,10 @@
       font-family: courier;
       text-align: center;
     }
+    h2 {
+      font-family: courier;
+      text-align: center;
+    }
     .panel-footer{
       font-family: courier;
       text-align: center;
@@ -92,10 +96,11 @@
  ?>
   <div class="container">
     <div class="jumbotron">
-      <h1>Welcome to AJKM Marketplace</h1>
+      <h1>AJKM Marketplace</h1>
     </div>
   </div>
-
+  <br>
+  <h2>Welcome!</h2>
   <h5>Check Out the Recently Sold Items below!</h5>
   <div class="w3-content w3-display-container">
     <img class="mySlides" src="pics/car.jpg" width="400" height="400">
