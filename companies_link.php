@@ -54,16 +54,9 @@
 <body>
 
 <h3>Links to Our Product Websites</h3>
-<nav>
-    <ul>
-        <li><a target = '_blank' href="http://myozone.org/product.php">Ozone Architecture</a></li>
-        <li><a target = '_blank' href="https://liuj.us/Products.html">Potato Inc.</a></li>
-        <li><a target = '_blank' href="https://karantrucking.herokuapp.com/products.php">Karan's Trucking Co.</a></li>
-        <li><a target = '_blank' href="http://www.cmpe272mustafay.com/hw/hw2_products_services.php">SFDB</a></li>
-    </ul>
-</nav>
 
-<h5>Information about top 5 products for <strong>each</strong> company will go here. Or they can go on the home page.</h5>
+
+<h5>Click on the company name for more information</h5>
 <?php 
         $conn = new mysqli("us-cdbr-east-02.cleardb.com", "b74d7cacca644f", "96adc723","heroku_8c6c26a69cb9c50");
         if ($conn->connect_error) {
@@ -83,7 +76,7 @@
 
           printf('<div class="col">');
           printf('<ul>');
-          printf('<h2>Potato Inc Products</h2>');
+          printf('<a target = '_blank' href="https://liuj.us/Products.html"><h2>Potato Inc Products</h2></a>');
           while($row = $result->fetch_assoc()) {
             $prod = $row["item"]; $rating = strval($row["score"]);
             printRating($prod,$rating);
@@ -97,7 +90,7 @@
 
           printf('<div class="col">');
           printf('<ul>');
-          printf('<h2>Ozone Products</h2>');
+          printf('<a target = '_blank' href="http://myozone.org/product.php"><h2>Ozone Products</h2></a>');
           while($row = $result->fetch_assoc()) {
             $prod = $row["item"]; $rating = strval($row["score"]);
             printRating($prod,$rating);
@@ -111,7 +104,7 @@
 
           printf('<div class="col">');
           printf('<ul>');
-          printf('<h2>SFDB Products</h2>');
+          printf('<a target = '_blank' href="http://www.cmpe272mustafay.com/hw/hw2_products_services.php"><h2>SFDB Products</h2></a>');
           while($row = $result->fetch_assoc()) {
             $prod = $row["item"]; $rating = strval($row["score"]);
             printRating($prod,$rating);
@@ -125,7 +118,7 @@
 
           printf('<div class="col">');
           printf('<ul>');
-          printf('<h2>Karan Trucking Products</h2>');
+          printf('<a target = '_blank' href="https://karantrucking.herokuapp.com/products.php"><h2>Karan Trucking Products</h2></a>');
           while($row = $result->fetch_assoc()) {
             $prod = $row["item"]; $rating = strval($row["score"]);
             printRating($prod,$rating);
