@@ -87,7 +87,7 @@
 		</div>
 		<input type='hidden' id='product_name' name='product_name' value="" />
 		<script>
-		window.onload = function() {document.getElementById('product_name').value = $product_info[1];};
+		window.onload = function() {console.log("load event detected!");document.getElementById('product_name').value = $product_info[1];};
 		</script>
 		<br>
 		<input type="submit"> 
