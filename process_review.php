@@ -1,5 +1,5 @@
 <?php
-extract($_POST);
+extract($_GET);
 echo 'ratings: '.$ratings.' <br>';
 echo 'review: <br>'.$review.'<br>';
 ?>
