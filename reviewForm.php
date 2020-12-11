@@ -63,7 +63,7 @@
 		<div>
 			<?php
 			echo '<h3>'.$product_info[0].'</h3>';	
-			echo '<h4>Product: '.$product_info[1].'</h4>';
+			echo '<h4 name=\'product_n\'>Product: '.$product_info[1].'</h4>';
 			?>
 			<label for="ratings"><Strong>Please Choose a Rating</Strong></label>
 			<br>
@@ -88,7 +88,7 @@
 		<input type='hidden' id='product_name' name='product_name' value="" />
 		<script>
 		window.onload = function() {
-			let prod_name = "<?php echo $product_info[1]; ?>";
+			let prod_name = document.getElementById('product_n').textContent;
 			document.getElementById('product_name').value = prod_name;
 		};
 		</script>
