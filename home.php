@@ -118,15 +118,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="pics/m1.jpg" alt="car" style="width:30%;">
+        <img src="pics/m1.jpg" alt="car" style="width:80%;">
       </div>
 
       <div class="item">
-        <img src="pics/l1.jpg"alt="car" style="width:30%;">
+        <img src="pics/l1.jpg"alt="car" style="width:80%;">
       </div>
     
       <div class="item">
-        <img src="pics/h1.jpg" alt="house" style="width:30%;">
+        <img src="pics/h1.jpg" alt="house" style="width:80%;">
       </div>
     </div>
 
