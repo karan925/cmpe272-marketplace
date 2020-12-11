@@ -62,7 +62,7 @@
       text-align: center;
     }
     .container{
-      background: white;
+      background-color: #ffffff;
     }
   </style>
 </header>
@@ -99,7 +99,6 @@
       <h1>AJKM Marketplace</h1>
     </div>
   </div>
-  <br>
   <h2>Welcome!</h2>
   <h5>Check Out the Recently Sold Items below!</h5>
   <div class="w3-content w3-display-container">
