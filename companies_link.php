@@ -21,6 +21,35 @@
   <a href="./authenticate.php">Log In/Sign Up</a>
   <a href="./logout.php">Log Out</a>
 </div>
+<style>
+  * {
+  box-sizing: border-box;
+}
+  ul{
+    line-height:150%;
+    list-style:none;
+  }
+  .col{
+    float:left;
+    width:25%;
+    padding:10px;
+
+  }
+  li{
+
+  }
+  div.review{
+    background-color: #f2f2f2;  }
+  .row:after{
+    content:"";
+    display:table;
+    clear:both;
+  }
+  .name{
+    font-weight: bold;
+  }
+
+</style>
 </header>
 <body>
 
