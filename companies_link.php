@@ -145,7 +145,7 @@
         $conn->close();
       function printRating($prod, $rating){
         printf('<h3>'.$prod.'</h3>');
-        printf('<h4>Overall Ratings: '.$rating.'</h4>');
+        printf('<h4>Overall Rating: '.$rating.'</h4>');
       }
       function printReviews($conn, $val){
         //$rev = "SELECT name, content FROM(SELECT * FROM heroku_8c6c26a69cb9c50.review WHERE item=?)a ORDER BY RANd() LIMIT 3";
