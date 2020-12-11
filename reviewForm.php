@@ -59,7 +59,7 @@
 	$product_info = $_GET['prod'];
 	$product_info = unserialize(base64_decode($product_info));
 ?>
-	<form id="reviewForm" action="process_review.php" method="post">
+	<form action="process_review.php" method="post"> <!-- id="reviewForm" -->
 		<div>
 			<?php
 			echo '<h3>'.$product_info[0].'</h3>';	
