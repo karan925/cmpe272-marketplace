@@ -32,7 +32,7 @@
     }
     img {
       text-align:center;
-      width: 30%;
+      width: 50%;
       height: 30%;
       display:block;
       margin:auto;

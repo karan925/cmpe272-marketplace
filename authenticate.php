@@ -29,6 +29,21 @@
       text-align: center;
       padding: 20px 50px;
     }
+    input[type=text]{
+      width: 50%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+    input[type=submit]{
+      width: 50%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+    input[type=text]:focus {
+    background-color: lightblue;
+    }
   </style>
 </header>
 <body>
