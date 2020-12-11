@@ -64,6 +64,11 @@
     .container{
       background-color: #ffffff;
     }
+    .topnav
+    {
+      text-align: center;
+      font-family: courier;
+    }
   </style>
 </header>
 <body>
