@@ -57,7 +57,8 @@
           printf('<h2>Potato Inc Products</h2>');
           while($row = $result->fetch_assoc()) {
             $prod = $row["item"]; $rating = strval($row["score"]);
-            printf($prod.' '.$rating);
+            printRating($prod,$rating);
+            printReviews($conn, $prod);
             printf('<br>');
           }
           printf('</ul>');
@@ -106,7 +107,24 @@
 
         printf('<div>');
         $conn->close();
-
+      function printRating($prod, $rating){
+        printf('<h3>'.$prod.'</h3>');
+        printf('<h4>Overall Ratings: '.$rating.'</h4>');
+      }
+      function printReviews($conn, $val){
+        //$rev = "SELECT name, content FROM(SELECT * FROM heroku_8c6c26a69cb9c50.review WHERE item=?)a ORDER BY RANd() LIMIT 3";
+        $stmt = $conn->prepare("SELECT name, content FROM(SELECT * FROM heroku_8c6c26a69cb9c50.review WHERE item=?)a ORDER BY RANd() LIMIT 3");
+        $stmt -> bind_param("s", $val);
+        $stmt ->execute();
+        if($result=$stmt->get_result()){
+          printf('<div class="review"><ul>');
+          while($row= $result->fetch_assoc()){
+            printf('<li class="name">'.$row["name"].'</li>');
+            printf('<li class="comment">'.$row["content"].'</li>');
+          }
+          printf('</ul></div>');
+        }
+      }
 ?>
 
 
