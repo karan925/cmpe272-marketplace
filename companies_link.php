@@ -48,7 +48,7 @@
   .name{
     font-weight: bold;
   }
-  h3{
+  h2{
     text-align: center;
     padding: 20px 50px;
     font-family: courier;
@@ -61,10 +61,10 @@
 </header>
 <body>
 
-<h3>Trending Vendors</h3>
+<h2>Trending Vendors</h2>
 
 
-<h5>Click on the company name for more information</h5>
+<h5>Below are some of our top vendors and their top products. Check them out! </h5>
 <?php 
         $conn = new mysqli("us-cdbr-east-02.cleardb.com", "b74d7cacca644f", "96adc723","heroku_8c6c26a69cb9c50");
         if ($conn->connect_error) {
