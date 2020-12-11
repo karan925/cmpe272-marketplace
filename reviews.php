@@ -37,6 +37,7 @@
   }
   p{
     text-align: center;
+    font-family: courier;
   }
 </style>
 

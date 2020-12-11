@@ -22,12 +22,20 @@
   <a href="./authenticate.php">Log In/Sign Up</a>
   <a href="./logout.php">Log Out</a>
 </div>
+<style>
+   h3{
+      text-align: center;
+      font-family: courier;
+      padding: 20px 50px;
+   }
+
+</style>
 </header>
 <meta http-equiv="refresh" content="10" > 
 <body>
 
 <h3>Your Previously Visited Products</h3>
-<p>The list of all the user's product visit history will go here.</p>
+<br>
 <?php 
    $name_mapper = array();
    $name_mapper['product1'] = '2019 Porsche 911';
