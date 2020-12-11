@@ -100,7 +100,8 @@
           printf('<h2>Ozone Products</h2>');
           while($row = $result->fetch_assoc()) {
             $prod = $row["item"]; $rating = strval($row["score"]);
-            printf($prod.' '.$rating);
+            printRating($prod,$rating);
+            printReviews($conn, $prod);
             printf('<br>');
           }
           printf('</ul>');
@@ -113,7 +114,8 @@
           printf('<h2>SFDB Products</h2>');
           while($row = $result->fetch_assoc()) {
             $prod = $row["item"]; $rating = strval($row["score"]);
-            printf($prod.' '.$rating);
+            printRating($prod,$rating);
+            printReviews($conn, $prod);
             printf('<br>');
           }
           printf('</ul>');
@@ -126,14 +128,14 @@
           printf('<h2>Karan Trucking Products</h2>');
           while($row = $result->fetch_assoc()) {
             $prod = $row["item"]; $rating = strval($row["score"]);
-            printf($prod.' '.$rating);
+            printRating($prod,$rating);
+            printReviews($conn, $prod);
             printf('<br>');
           }
           printf('</ul>');
           printf('</div>');
         }
         
-
         printf('<div>');
         $conn->close();
       function printRating($prod, $rating){
