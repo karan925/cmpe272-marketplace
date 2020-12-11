@@ -114,15 +114,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="pics/car.jpg" alt="Los Angeles" style="width:50%;">
+        <img src="pics/m1.jpg" alt="car" style="width:30%;">
       </div>
 
       <div class="item">
-        <img src="pics/m1.jpg"alt="Chicago" style="width:50%;">
+        <img src="pics/l1.jpg"alt="car" style="width:30%;">
       </div>
     
       <div class="item">
-        <img src="pics/h1.jpg" alt="New york" style="width:50%;">
+        <img src="pics/h1.jpg" alt="house" style="width:30%;">
       </div>
     </div>
 
