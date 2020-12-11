@@ -57,6 +57,9 @@
       font-family: courier;
       text-align: center;
     }
+    .container{
+      background: white;
+    }
   </style>
 </header>
 <body>
@@ -87,8 +90,10 @@
    echo '</div>';
  }
  ?>
-  <div class="jumbotron">
-    <h1>Welcome to AJKM Marketplace</h1>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Welcome to AJKM Marketplace</h1>
+    </div>
   </div>
 
   <h5>Check Out the Recently Sold Items below!</h5>
