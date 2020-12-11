@@ -49,6 +49,14 @@
       font-family: courier;
       text-align: center;
     }
+    .panel-footer{
+      font-family: courier;
+      text-align: center;
+    }
+    .panel-heading{
+      font-family: courier;
+      text-align: center;
+    }
   </style>
 </header>
 <body>
