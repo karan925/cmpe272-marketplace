@@ -71,7 +71,7 @@
       </div>
       <div class="form-row">
         <div class="form-group col-sm-4 offset-4">
-          <input type="submit" class="btn btn-success" name="Enter" value="Enter">
+          <input type="submit" class="btn btn-success" name="Login" value="Login">
         </div>
       </div>
     </form>
@@ -106,7 +106,7 @@
       </div>
       <div class="form-row">
         <div class="form-group col-sm-4 offset-4">
-          <input type="submit" class ="w3-button w3-light-blue w3-round-large" name="Enter" value="Enter">
+          <input type="submit" class="btn btn-success" name="Register" value="Register">
         </div>
       </div>
     </form>
