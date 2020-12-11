@@ -48,12 +48,12 @@
     }
     h3{
       text-align: center;
+      font-family: courier;
       padding: 12px 20px;
     }
   </style>
 </header>
 <body>
-
   <h3>Log In</h3>
   <div class="Container">
     <form action="login.php" method="post">
