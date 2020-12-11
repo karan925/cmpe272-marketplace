@@ -257,6 +257,7 @@ foreach ($keys as $page){
    if ($count == 5) {
    break;
    }
+   $name1 = substr($page, 1,-4);
    $searchpos1 = array_search($page, $ozone);
    $searchpos2 = array_search($name1, $trucking);
    $searchpos3 = array_search($name1, $potatos);
