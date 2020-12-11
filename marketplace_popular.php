@@ -257,10 +257,26 @@ foreach ($keys as $page){
    if ($count == 5) {
    break;
    }
-   $filt = substr($page, 1);
-   $name1 = explode(".", $filt)[0];
-   $name = $name_mapper[$name1];
-   $link = ".".$page;
+   $searchpos1 = array_search($page, $ozone);
+   $searchpos2 = array_search($name1, $trucking);
+   $searchpos3 = array_search($name1, $potatos);
+   $searchpos4 = array_search($name1, $sfdb);
+   if ($searchpos1 !== FALSE) {
+      $link = 'http://myozone.org/'.$page;
+      $name = $name1;
+   }
+   if ($searchpos2 !== FALSE) {
+      $link = 'https://karantrucking.herokuapp.com/'.$page;
+      $name = $name_mapper[$name1];
+   }
+   if ($searchpos3 !== FALSE) {
+      $link = "https://liuj.us/".$page;
+      $name = $name_mapper[$name1];
+   }
+   if ($searchpos4 !== FALSE) {
+      $link = "http://www.cmpe272mustafay.com/".$page;
+      $name = $name_mapper[$name1];
+   }
    echo '<tr><td><a href="'.$link.'"><strong>'.$name.'</strong></a></td></tr>';
    $count = $count + 1;
 }
