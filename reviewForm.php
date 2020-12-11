@@ -88,7 +88,7 @@
 		<input type='hidden' id='product_name' name='product_name' value="" />
 		<input type='hidden' id='company_name' name='company_name' value="" />
 		<script>
-		window.onload = function() {
+		$(document).ready( function() {
 			let prod_name = document.getElementById('product_n').textContent;
 			let comp_name = document.getElementById('company_n').textContent;
 			if(typeof document.getElementById('product_name') !== 'undefined' && document.getElementById('product_name') !== null) {
@@ -97,7 +97,7 @@
 			if(typeof document.getElementById('company_name') !== 'undefined' && document.getElementById('company_name') !== null) {
 				document.getElementById('company_name').value = comp_name;
 			}
-		};
+		});
 		</script>
 		<br>
 		<input type="submit"> 
