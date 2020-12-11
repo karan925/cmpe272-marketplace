@@ -48,12 +48,19 @@
   .name{
     font-weight: bold;
   }
+  h3{
+    text-align: center;
+    padding: 20px;
+  }
+  .col{
+    font-size: 20px;
+  }
 
 </style>
 </header>
 <body>
 
-<h3>Links to Our Product Websites</h3>
+<h3>Trending Vendors</h3>
 
 
 <h5>Click on the company name for more information</h5>
