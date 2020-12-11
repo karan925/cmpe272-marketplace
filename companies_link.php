@@ -76,7 +76,7 @@
 
           printf('<div class="col">');
           printf('<ul>');
-          printf('<a target = '_blank' href="https://liuj.us/Products.html"><h2>Potato Inc Products</h2></a>');
+          printf('<a target = "_blank" href="https://liuj.us/Products.html"><h2>Potato Inc Products</h2></a>');
           while($row = $result->fetch_assoc()) {
             $prod = $row["item"]; $rating = strval($row["score"]);
             printRating($prod,$rating);
@@ -90,7 +90,7 @@
 
           printf('<div class="col">');
           printf('<ul>');
-          printf('<a target = '_blank' href="http://myozone.org/product.php"><h2>Ozone Products</h2></a>');
+          printf('<a target = "_blank" href="http://myozone.org/product.php"><h2>Ozone Products</h2></a>');
           while($row = $result->fetch_assoc()) {
             $prod = $row["item"]; $rating = strval($row["score"]);
             printRating($prod,$rating);
@@ -104,7 +104,7 @@
 
           printf('<div class="col">');
           printf('<ul>');
-          printf('<a target = '_blank' href="http://www.cmpe272mustafay.com/hw/hw2_products_services.php"><h2>SFDB Products</h2></a>');
+          printf('<a target = "_blank" href="http://www.cmpe272mustafay.com/hw/hw2_products_services.php"><h2>SFDB Products</h2></a>');
           while($row = $result->fetch_assoc()) {
             $prod = $row["item"]; $rating = strval($row["score"]);
             printRating($prod,$rating);
@@ -118,7 +118,7 @@
 
           printf('<div class="col">');
           printf('<ul>');
-          printf('<a target = '_blank' href="https://karantrucking.herokuapp.com/products.php"><h2>Karan Trucking Products</h2></a>');
+          printf('<a target = "_blank" href="https://karantrucking.herokuapp.com/products.php"><h2>Karan Trucking Products</h2></a>');
           while($row = $result->fetch_assoc()) {
             $prod = $row["item"]; $rating = strval($row["score"]);
             printRating($prod,$rating);
