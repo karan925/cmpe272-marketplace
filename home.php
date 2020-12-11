@@ -26,6 +26,7 @@
     h1{ 
       text-align: center;
       padding: 20px 50px;
+      font-family: courier;
     }
     .w3-content {
       text-align:center;
