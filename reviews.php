@@ -58,22 +58,7 @@
 
 
 <?php 
-        $con = mysqli_connect("us-cdbr-east-02.cleardb.com", "b74d7cacca644f", "96adc723");
-
-        mysqli_select_db($con, "heroku_8c6c26a69cb9c50");
-        $query = "SELECT * FROM heroku_8c6c26a69cb9c50.session_status WHERE status = 'session'";
-
-        if ( !( $result = mysqli_query($con, $query))) {
-          print("Could not execute query! <br />");
-          die();
-        }
-
-        foreach ($result as $x) {
-        $loggedin = $x['loggedin'];
-        $Username = $x['username'];
-        }
-
-        if ($loggedin == 1) {
+        
           /**
         * Establishing mysql connection
         */
@@ -155,11 +140,7 @@
             $prod_info =  base64_encode(serialize($prod_info));
             printf('<a href="./reviewForm.php?prod='.$prod_info.'"><li>'.$prod.'</li></a>');
         }
-        }
-        else {
-          echo "Log in to add Reviews";
-          echo '<a href="./authenticate.php"><button>Log In Here!</button></a>';
-        }
+        
 ?>
 
 
