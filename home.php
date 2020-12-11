@@ -67,7 +67,6 @@
     .topnav
     {
       text-align: center;
-      font-family: courier;
     }
   </style>
 </header>
@@ -103,10 +102,10 @@
   <div class="container">
     <div class="jumbotron">
       <h1>AJKM Marketplace</h1>
-       <h2>Welcome!</h2>
-       <h5>Check Out the Recently Sold Items below!</h5>
     </div>
   </div>
+  <h2>Welcome!</h2>
+  <h5>Check Out the Recently Sold Items below!</h5>
   <div class="container"> 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -156,14 +155,14 @@
       </div>
     </div>
     <div class="col-sm-4"> 
-      <div class="panel panel-danger">
+      <div class="panel panel-primary">
         <div class="panel-heading">BLACK FRIDAY DEAL</div>
         <div class="panel-body"><img src="pics/redPotato.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">Buy 50 or more and get a 15% discount!</div>
       </div>
     </div>
     <div class="col-sm-4"> 
-      <div class="panel panel-success">
+      <div class="panel panel-primary">
         <div class="panel-heading">BLACK FRIDAY DEAL</div>
         <div class="panel-body"><img src="pics/a.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
