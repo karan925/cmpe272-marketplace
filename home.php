@@ -98,10 +98,10 @@
   <div class="container">
     <div class="jumbotron">
       <h1>AJKM Marketplace</h1>
+       <h2>Welcome!</h2>
+       <h5>Check Out the Recently Sold Items below!</h5>
     </div>
   </div>
-  <h2>Welcome!</h2>
-  <h5>Check Out the Recently Sold Items below!</h5>
   <div class="container"> 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
