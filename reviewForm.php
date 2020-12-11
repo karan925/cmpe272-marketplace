@@ -87,16 +87,16 @@
 		</div>
 		<input type='hidden' id='product_name' name='product_name' value="" />
 		<input type='hidden' id='company_name' name='company_name' value="" />
-		<script>
+		<br>
+		<input type="submit"> 
+	</form>
+	<script>
 		window.onload = function() {
 			let prod_name = document.getElementById('product_n').textContent;
 			let comp_name = document.getElementById('company_n').textContent;
 			document.getElementById('product_name').value = prod_name;
 			document.getElementById('company_name').value = comp_name;
 		};
-		</script>
-		<br>
-		<input type="submit"> 
-	</form>
+	</script>
 </body>
 </html>
