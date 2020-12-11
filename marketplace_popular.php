@@ -22,11 +22,19 @@
   <a href="./authenticate.php">Log In/Sign Up</a>
   <a href="./logout.php">Log Out</a>
 </div>
+<style>
+  h3{
+    text-align: center;
+    font-family: courier;
+  }
+
+</style>
 </header>
 <meta http-equiv="refresh" content="10" >
 <body>
 
-<h3>Presentation of the top 5 products in the whole marketplace (most visits/best ratings etc.)</h3>
+<h3>Top 5 Products from each of our trusted vendors!</h3>
+<br>
 <?php 
    $name_mapper = array();
    $name_mapper['product1'] = '2019 Porsche 911';
