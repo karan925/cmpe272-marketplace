@@ -22,7 +22,7 @@
 extract($_GET);
 echo 'ratings: '.$ratings.'<br>';
 echo 'review: <br>'.$review.'<br>';
-echo 'product name: '.$product_info[1].'<br>';
+echo 'product name: '.$product_name.'<br>';
 
 $insert_sql = "INSERT INTO heroku_8c6c26a69cb9c50.reviews(name, item, content)";
 
