@@ -53,6 +53,10 @@
     padding: 20px 50px;
     font-family: courier;
   }
+  h5{
+    text-align: center;
+    font-family: courier;
+  }
   .col{
     font-size: 20px;
   }
