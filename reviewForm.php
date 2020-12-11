@@ -62,7 +62,7 @@
 	<form id="reviewForm" action="process_review.php" method="get"> <!-- id="reviewForm" -->
 		<div>
 			<?php
-			echo '<h3>'.$product_info[0].'</h3>';	
+			echo '<h3 name=\'company_n\'>'.$product_info[0].'</h3>';	
 			echo '<h4 name=\'product_n\'>Product: '.$product_info[1].'</h4>';
 			?>
 			<label for="ratings"><Strong>Please Choose a Rating</Strong></label>
@@ -86,10 +86,13 @@
 			</textarea>	
 		</div>
 		<input type='hidden' id='product_name' name='product_name' value="" />
+		<input type='hidden' id='company_name' name='company_name' value="" />
 		<script>
 		window.onload = function() {
 			let prod_name = document.getElementById('product_n').textContent;
+			let comp_name = document.getElementById('company_n').textContent;
 			document.getElementById('product_name').value = prod_name;
+			document.getElementById('company_name').value = comp_name;
 		};
 		</script>
 		<br>
