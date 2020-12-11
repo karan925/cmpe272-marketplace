@@ -62,7 +62,7 @@
    echo '<div class="Container">';
    echo '<div class="row">';
    echo '<div class="col-6 offset-10">';
-   echo "<strong> Welcome: ".$Username."! </strong>";
+   echo "<strong> Logged In as: ".$Username."! </strong>";
    echo '</div>';
    echo '</div>';
    echo '</div>';

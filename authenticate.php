@@ -58,13 +58,13 @@
       <div class="form-row">
         <div class="form-group col-sm-4 offset-4">
           <td><strong>Username:</strong></td>
-          <input type="text" name="Username" placeholder="Username">
+          <input type="text" class="mr-1 offset-1" name="Username" placeholder="Username">
         </div>
       </div>
       <div class="form-row">
         <div class="form-group col-sm-4 offset-4">
           <td><strong>Password:</strong></td>
-          <input type="text" name="Password" placeholder="Password">
+          <input type="text" class="mr-2 offset-1" name="Password" placeholder="Password">
         </div>
       </div>
       <div class="form-row">
