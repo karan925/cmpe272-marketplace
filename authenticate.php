@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   <div class="topnav">
     <a href="./home.php">Home</a>
     <a href="./companies_link.php">Marketplace Members</a>
@@ -69,7 +71,7 @@
       </div>
       <div class="form-row">
         <div class="form-group col-sm-4 offset-4">
-          <input type="submit" class="w3-button w3-light-blue w3-round-large" name="Enter" value="Enter">
+          <input type="submit" class="btn btn-success" name="Enter" value="Enter">
         </div>
       </div>
     </form>
