@@ -195,6 +195,32 @@
       </div>
     </div>
   </div>
+</div><br>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Top Seller</div>
+        <div class="panel-body"><img src="pics/sc.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Top Seller</div>
+        <div class="panel-body"><img src="pics/ne.jpg"  class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Recently Reduced Price!</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Top Seller</div>
+        <div class="panel-body"><img src="pics/mr.jpg"  class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">HOT!!!</div>
+      </div>
+    </div>
+  </div>
 </div><br><br>
 
 </body>
