@@ -85,7 +85,7 @@
 			<textarea form="reviewForm" rows="4" cols="50" name="review" id="review">	
 			</textarea>	
 		</div>
-		<input type='hidden' id='product_name' name='product_name' value='$product_info[1]' />
+		<input type='hidden' id='product_name' name='product_name' value=$product_info[1] />
 		<br>
 		<input type="submit"> 
 	</form>
