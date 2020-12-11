@@ -20,6 +20,7 @@
   <a href="./marketplace_popular.php">Most Popular Products</a>
   <a class = "active" href="./visit_history.php">My History</a>
   <a href="./authenticate.php">Log In/Sign Up</a>
+  <a href="./logout.php">Log Out</a>
 </div>
 </header>
 <meta http-equiv="refresh" content="10" > 
