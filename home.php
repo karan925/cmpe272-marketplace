@@ -61,7 +61,7 @@
       font-family: courier;
       text-align: center;
     }
-    .container{
+    .jumbotron{
       background-color: #ffffff;
     }
     .topnav
