@@ -245,11 +245,9 @@ echo '<div class="Container">';
 echo '<div class="rpw">';
 echo '<div class="col-6 offset-2">';
 echo "<h4>Most Viewed Products in the Marketplace</h4>";
-// $query = "SELECT * FROM heroku_8c6c26a69cb9c50.most_visited_per WHERE company = 'SFDB'";
 
 $total_list = $ozone_list + $pot_list + $kem_list + $sfdb_list;
 arsort($total_list);
-print_r($total_list);
 $keys = array_keys($total_list);
 echo '<table class="table"><tr></tr>';
 $count = 0;
