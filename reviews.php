@@ -30,7 +30,7 @@
     display:table;
     clear:both;
   }
-  h3{
+  h2{
     text-align: center;
     padding: 20px 50px;
     font-family: courier;
@@ -52,7 +52,7 @@
 </header>
 <body>
 
-<h3>Add a Review!</h3>
+<h2>Add a Review!</h2>
 
 <p>Click on a link below add a review to any of the products offered on our marketplace!</p>
 
