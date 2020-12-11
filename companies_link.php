@@ -50,7 +50,8 @@
   }
   h3{
     text-align: center;
-    padding: 20px;
+    padding: 20px 50px;
+    font-family: courier;
   }
   .col{
     font-size: 20px;
