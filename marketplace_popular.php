@@ -26,6 +26,7 @@
   h3{
     text-align: center;
     font-family: courier;
+    padding: 20px 50px;
   }
 
 </style>
