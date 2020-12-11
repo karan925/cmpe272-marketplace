@@ -92,11 +92,10 @@
 	</form>
 	<script>
 		window.onload = function() {
-				let prod_name = document.getElementById('product_n').textContent;
-				let comp_name = document.getElementById('company_n').textContent;
-				document.getElementById('product_name').value = prod_name;
-				document.getElementById('company_name').value = comp_name;
-			}
+			let prod_name = document.getElementById('product_n').textContent;
+			let comp_name = document.getElementById('company_n').textContent;
+			document.getElementById('product_name').value = prod_name;
+			document.getElementById('company_name').value = comp_name;
 		};
 	</script>
 </body>
