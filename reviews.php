@@ -73,12 +73,8 @@
         $Username = $x['username'];
         }
 
-        if ($loggedin !== 1) {
-          echo "Log in or Sign Up to Add Reviews!";
-          echo '<a href="./authenticate.php"><button>Log In Here!</button></a>';
-        }
-        else {
-        /**
+        if ($loggedin == 1) {
+          /**
         * Establishing mysql connection
         */
         $conn = new mysqli("us-cdbr-east-02.cleardb.com", "b74d7cacca644f", "96adc723","heroku_8c6c26a69cb9c50");
@@ -159,6 +155,10 @@
             $prod_info =  base64_encode(serialize($prod_info));
             printf('<a href="./reviewForm.php?prod='.$prod_info.'"><li>'.$prod.'</li></a>');
         }
+        }
+        else {
+          echo "Log in to add Reviews";
+          echo '<a href="./authenticate.php"><button>Log In Here!</button></a>';
         }
 ?>
 
