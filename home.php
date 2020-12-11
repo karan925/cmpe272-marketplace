@@ -87,8 +87,9 @@
    echo '</div>';
  }
  ?>
-
-  <h1>Welcome to AJKM Marketplace</h1>
+  <div class="jumbotron">
+    <h1>Welcome to AJKM Marketplace</h1>
+  </div>
 
   <h5>Check Out the Recently Sold Items below!</h5>
   <div class="w3-content w3-display-container">
