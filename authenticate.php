@@ -51,7 +51,7 @@
 </header>
 <body>
 
-  <h3 class="offset-4">Log In</h3>
+  <h3>Log In</h3>
   <div class="Container">
     <form action="login.php" method="post">
       <div class="form-row">
