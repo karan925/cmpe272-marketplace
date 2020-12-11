@@ -249,6 +249,7 @@ echo "<h4>Most Viewed Products in the Marketplace</h4>";
 
 $total_list = $ozone_list + $pot_list + $kem_list + $sfdb_list;
 arsort($total_list);
+echo $total_list;
 $keys = array_keys($total_list);
 echo '<table class="table"><tr></tr>';
 $count = 0;
