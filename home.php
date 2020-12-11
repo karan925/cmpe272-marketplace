@@ -38,6 +38,13 @@
       display:block;
       margin:auto;
     }
+    .Container{
+      font-family: courier;
+    }
+    h5 {
+      font-family: courier;
+      text-align: center;
+    }
   </style>
 </header>
 <body>
@@ -62,7 +69,7 @@
    echo '<div class="Container">';
    echo '<div class="row">';
    echo '<div class="col-6 offset-10">';
-   echo "<strong> Logged In as: ".$Username."! </strong>";
+   echo "<strong> Logged In as: ".$Username." </strong>";
    echo '</div>';
    echo '</div>';
    echo '</div>';
@@ -70,10 +77,13 @@
  ?>
 
   <h1>Welcome to AJKM Marketplace</h1>
+
+  <h5>Check Out the Recently Sold Items below!</h5>
   <div class="w3-content w3-display-container">
     <img class="mySlides" src="pics/car.jpg" width="400" height="400">
     <img class="mySlides" src="pics/pot.jpg" width="400" height="400">
     <img class="mySlides" src="pics/build.jpg" width="400" height="400">
+    <img class="mySlides" src="pics/star.jpg" width="400" height="400">
 
     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
     <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
