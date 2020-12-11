@@ -42,7 +42,10 @@
       box-sizing: border-box;
     }
     input[type=text]:focus {
-    background-color: lightblue;
+      background-color: lightblue;
+    }
+    h3{
+      text-align: center;
     }
   </style>
 </header>
