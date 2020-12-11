@@ -61,7 +61,7 @@
    echo '<div class="Container">';
    echo '<div class="row">';
    echo '<div class="col-6 offset-8">';
-   echo "Welcome to our Marketplace: ".$Username."!";
+   echo "<strong> Welcome to our Marketplace: ".$Username."! </strong>";
    echo '</div>';
    echo '</div>';
    echo '</div>';
