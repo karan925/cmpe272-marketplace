@@ -46,6 +46,7 @@
     }
     h3{
       text-align: center;
+      padding: 12px 20px;
     }
   </style>
 </header>
@@ -57,13 +58,13 @@
       <div class="form-row">
         <div class="form-group col-sm-4 offset-4">
           <td><strong>Username:</strong></td>
-          <input type="text" class="mr-1 offset-1" name="Username" placeholder="Username">
+          <input type="text" name="Username" placeholder="Username">
         </div>
       </div>
       <div class="form-row">
         <div class="form-group col-sm-4 offset-4">
           <td><strong>Password:</strong></td>
-          <input type="text" class="mr-2 offset-1" name="Password" placeholder="Password">
+          <input type="text" name="Password" placeholder="Password">
         </div>
       </div>
       <div class="form-row">
@@ -80,7 +81,7 @@
   ?> 
 
 
-  <h3 class="offset-4">Register if you don't have an account</h3>
+  <h3>Dont have an Account? Register Now!</h3>
   <div class="Container">
     <form action="register.php" method="post">
       <div class="form-row">
