@@ -91,12 +91,13 @@
 		<input type="submit"> 
 	</form>
 	<script>
-		window.onload = function() {
+		function assign_values() {
 			let prod_name = document.getElementById('product_n').textContent;
 			let comp_name = document.getElementById('company_n').textContent;
 			document.getElementById('product_name').value = prod_name;
 			document.getElementById('company_name').value = comp_name;
-		};
+		}
+		window.onload = assign_values;
 	</script>
 </body>
 </html>
