@@ -82,8 +82,7 @@
 			<br>
 			<label for="review"><Strong>Please Submit a Review</Strong></label>
 			<br>
-			<textarea form="reviewForm" rows="4" cols="50" name="review" id="review">	
-			</textarea>	
+			<textarea form="reviewForm" rows="4" cols="50" name="review" id="review"></textarea>	
 		</div>
 		<input type='hidden' id='product_name' name='product_name' value="" />
 		<input type='hidden' id='company_name' name='company_name' value="" />

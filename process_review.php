@@ -36,6 +36,7 @@
 	foreach ($result as $x) {
 		$Username = $x['username'];
 	}
+	echo $Username;
 
 	$select_review_sql = "SELECT * FROM heroku_8c6c26a69cb9c50.review WHERE name = "."'".$Username."' ". "AND item = "."'".$product_name."'";
 	if ( !( $result = mysqli_query($con, $select_review_sql))) {
