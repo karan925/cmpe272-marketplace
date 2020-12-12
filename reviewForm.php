@@ -92,10 +92,15 @@
 	</form>
 	<script>
 		function assign_values() {
-			let prod_name = document.getElementById('product_n').textContent;
-			let comp_name = document.getElementById('company_n').textContent;
-			document.getElementById('product_name').value = prod_name;
-			document.getElementById('company_name').value = comp_name;
+			if(typeof document.getElementById('product_n') !== 'undefined' && document.getElementById('product_n') !== null && 
+			typeof document.getElementById('company_n') !== 'undefined' && document.getElementById('company_n') !== null && 
+			typeof document.getElementById('product_name') !== 'undefined' && document.getElementById('product_name') !== null && 
+			typeof document.getElementById('company_name') !== 'undefined' && document.getElementById('company_name') !== null) {
+				let prod_name = document.getElementById('product_n').textContent;
+				let comp_name = document.getElementById('company_n').textContent;
+				document.getElementById('product_name').value = prod_name;
+				document.getElementById('company_name').value = comp_name;
+			}
 		}
 		window.onload = assign_values;
 	</script>
