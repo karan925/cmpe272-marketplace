@@ -23,7 +23,8 @@
 	// echo 'ratings: '.$ratings.'<br>';
 	// echo 'review: <br>'.$review.'<br>';
 	// echo 'product name: '.$product_name.'<br>';
-	$conn = new mysqli("us-cdbr-east-02.cleardb.com", "b74d7cacca644f", "96adc723","heroku_8c6c26a69cb9c50");
+	$conn = new mysqli("us-cdbr-east-02.cleardb.com", "b74d7cacca644f", "96adc723");
+	mysqli_select_db($conn, "heroku_8c6c26a69cb9c50");
 	if ($conn->connect_error) {
 		die("Connection failed: " . $conn->connect_error);
 	}
