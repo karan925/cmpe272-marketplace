@@ -90,7 +90,7 @@
 		$update_rating_sql = "UPDATE heroku_8c6c26a69cb9c50.rating set numvotes = ?, score = ? where item = ?;";
 		$stmt = $con->prepare($update_rating_sql);
 		$numvotes = $numvotes + 1;
-		$new_score = (($current_score * ($numvotes-1)) + $assigned_rating) / $numvotes;
+		$new_score = round((($current_score * ($numvotes-1)) + $assigned_rating) / $numvotes, 2);
 		$stmt->bind_param("ids", $numvotes, $new_score, $product_name);
 		$stmt->execute();
 		echo mysqli_error($con)."<br>";
