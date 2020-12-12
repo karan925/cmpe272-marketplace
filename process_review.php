@@ -39,6 +39,7 @@
 	foreach ($result as $x) {
 		$Username = $x['username'];
 	}
+	echo $Username;
 
 	$select_review_sql = "SELECT id FROM heroku_8c6c26a69cb9c50.reviews WHERE name=? and item=?";
 	$stmt = $conn->prepare($select_review_sql);
