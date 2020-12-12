@@ -44,6 +44,7 @@
 	$stmt = $conn->prepare($select_review_sql);
 	$stmt->bind_param("ss", $Username, $product_name);
 	$stmt->execute();
+	echo mysqli_error($conn)."<br>";
 	while($stmt->fetch()) {
 		print("You have already submitted a review of this item. <br />");
 		die();
@@ -54,12 +55,14 @@
 	$stmt = $conn->prepare($insert_review_sql);
 	$stmt->bind_param("sss", $Username, $product_name, $review);
 	$stmt->execute();
+	echo mysqli_error($conn)."<br>";
 	$stmt->close();
 
 	$select_rating_sql = "SELECT id, numvotes, score FROM heroku_8c6c26a69cb9c50.rating WHERE item=?";
 	$stmt = $conn->prepare($select_rating_sql);
 	$stmt->bind_param("s", $product_name);
 	$stmt->execute();
+	echo mysqli_error($conn)."<br>";
 	$stmt->bind_result($id_r, $numvotes_r, $current_score_r);
 	$id = 0;
 	$numvotes = 0;
@@ -88,6 +91,7 @@
 		$stmt = $conn->prepare($insert_rating_sql);
 		$stmt->bind_param("ssid", $product_name, $company_name, 1, $assigned_rating);
 		$stmt->execute();
+		echo mysqli_error($conn)."<br>";
 		$stmt->close();
 	}
 	else {
@@ -97,6 +101,7 @@
 		$new_score = (($current_score * ($numvotes-1)) + $assigned_rating) / $numvotes;
 		$stmt->bind_param("ids", $numvotes, $new_score, $product_name);
 		$stmt->execute();
+		echo mysqli_error($conn)."<br>";
 		$stmt->close();
 	}
 	echo "<h2>Thank you! Your review and rating have been successfully submitted!</h2>";
