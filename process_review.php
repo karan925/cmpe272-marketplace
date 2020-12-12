@@ -45,6 +45,7 @@
 
 	if (mysqli_num_rows($result) !== 0) {
 		print("You have already submitted a review of this item. <br />");
+		echo '<a href="./companies_link.php"><button>Check out more of our products!</button></a>';
 		die();
 	}
 	else {
