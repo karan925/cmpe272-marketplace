@@ -63,7 +63,7 @@
 		<div>
 			<?php
 			echo '<h3 name=\'company_n\' id=\'company_n\'>'.$product_info[0].'</h3>';	
-			echo '<h4 name=\'product_n\' id=\'product_n\'>Product: '.$product_info[1].'</h4>';
+			echo '<h4 name=\'product_n\' id=\'product_n\'>'.$product_info[1].'</h4>';
 			?>
 			<label for="ratings"><Strong>Please Choose a Rating</Strong></label>
 			<br>
@@ -98,8 +98,8 @@
 			typeof document.getElementById('company_name') !== 'undefined' && document.getElementById('company_name') !== null) {
 				let prod_name = document.getElementById('product_n').textContent;
 				let comp_name = document.getElementById('company_n').textContent;
-				document.getElementById('product_name').value = prod_name;
-				document.getElementById('company_name').value = comp_name;
+				document.getElementById('product_name').value = prod_name.replace(/ /gi, "+");
+				document.getElementById('company_name').value = comp_name.replace(/ /gi, "+");
 			}
 		}
 		window.onload = assign_values;
