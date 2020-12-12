@@ -98,8 +98,8 @@
 			typeof document.getElementById('company_name') !== 'undefined' && document.getElementById('company_name') !== null) {
 				let prod_name = document.getElementById('product_n').textContent;
 				let comp_name = document.getElementById('company_n').textContent;
-				document.getElementById('product_name').value = prod_name.replace(/ /gi, "+");
-				document.getElementById('company_name').value = comp_name.replace(/ /gi, "+");
+				document.getElementById('product_name').value = prod_name; //.replace(/ /gi, "+")
+				document.getElementById('company_name').value = comp_name;
 			}
 		}
 		window.onload = assign_values;
