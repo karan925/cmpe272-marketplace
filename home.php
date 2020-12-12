@@ -122,11 +122,15 @@
       </div>
 
       <div class="item">
-        <img src="pics/l1.jpg"alt="car" style="width:80%;">
+        <img src="pics/l1.jpg" alt="car" style="width:80%;">
       </div>
     
       <div class="item">
         <img src="pics/h1.jpg" alt="house" style="width:80%;">
+      </div>
+
+      <div class="item">
+        <img src="pics/pp.jpg" alt="media" style="width:80%;">
       </div>
     </div>
 
