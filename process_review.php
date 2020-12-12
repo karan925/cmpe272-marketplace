@@ -31,8 +31,8 @@
 
 	$select_username = "SELECT username from heroku_8c6c26a69cb9c50.session_status WHERE status='session';";
 	if ( !( $result = mysqli_query($conn, $select_username))) {
-		print("Could not execute query! <br />");
-		print(mysqli_error($conn)."<br>");
+		// print("Could not execute query! <br />");
+		echo mysqli_error($conn)."<br>";
 		die();
 	}
 
