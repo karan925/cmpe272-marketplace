@@ -114,6 +114,7 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
 
     <!-- Wrapper for slides -->
@@ -132,6 +133,10 @@
 
       <div class="item">
         <img src="pics/pp.jpg" alt="media" style="width:80%;">
+      </div>
+
+      <div class="item">
+        <img src="pics/redPotato.jpg" alt="potato" style="width:80%;">
       </div>
     </div>
 
