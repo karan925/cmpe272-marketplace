@@ -67,6 +67,23 @@
         if ($conn->connect_error) {
           die("Connection failed: " . $conn->connect_error);
         }
+        $query = "SELECT * FROM heroku_8c6c26a69cb9c50.session_status WHERE status = 'session'";
+
+        if ( !( $result = mysqli_query($conn, $query))) {
+          print("Could not execute query! <br />");
+          die();
+        }
+
+        foreach ($result as $x) {
+          $loggedin = $x['loggedin'];
+          $Username = $x['username'];
+        }
+        if ($loggedin == 0) {
+          echo "Log in to leave a review";
+          echo '<a href="./authenticate.php"><button>Log In Here!</button></a>'; 
+          die();
+        }
+        
 
         /**
         * One SQL query for each company 
@@ -141,7 +158,7 @@
             $prod_info =  base64_encode(serialize($prod_info));
             printf('<a href="./reviewForm.php?prod='.$prod_info.'"><li>'.$prod.'</li></a>');
         }
-        
+       
 ?>
 
 
