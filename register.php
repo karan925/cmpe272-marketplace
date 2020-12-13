@@ -118,6 +118,7 @@
         function passwordMismatch() {
             echo '<body>';
             echo '<h1 class="col-8 offset-2">Please retry! Passwords dont match. </h1>';
+            echo '<a href="./authenticate.php"><button>Log In Here!</button></a>'; 
             echo '</body>';
         }
      
