@@ -137,8 +137,11 @@
 
    }
    else {
+      echo '<div class = container >';
       echo "Log in to see Visit History";
-      echo '<a href="./authenticate.php"><button>Log In Here!</button></a>';
+      echo '<br>';
+      echo '<a href="./authenticate.php"><button class="btn btn-primary >Log In Here!</button></a>';
+      echo '</div>';
    }
 ?>
 

@@ -86,6 +86,7 @@
           echo '<div class = container>';
           echo "Log in to leave a review";
           echo '<br>';
+          echo '<br>';
           echo '<a href="./authenticate.php"><button class="btn btn-primary">>Log In Here!</button></a>'; 
           echo '</div>';
           die();
