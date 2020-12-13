@@ -21,6 +21,12 @@
   <a href="./visit_history.php">My History</a>
   <a class = "active" href="./authenticate.php">Log In/Sign Up</a>
 </div>
+<style>
+
+.container{
+    text-align: center;
+}
+</style>
 </header>
 <?php 
         extract( $_POST );
@@ -117,21 +123,27 @@
 
         function passwordMismatch() {
             echo '<body>';
+            echo '<div class = container>';
             echo '<h1 class="col-8 offset-2">Please retry! Passwords dont match. </h1>';
             echo '<a href="./authenticate.php"><button>Log In Here!</button></a>'; 
+            echo '</div>';
             echo '</body>';
         }
      
         function userExists() {
             echo '<body>';
+            echo '<div class = container>';
             echo '<h1 class="col-8 offset-2">A user with this username already exists. Please Log In.</h1>';
             echo '</body>';
+            echo '</div>';
         }
      
         function fieldsBlank() {
             echo '<body>';
+            echo '<div class = container>';
             echo '<h1 class="col-8 offset-2"> Please fill in all form fields.</h1>';
             echo '<a href="./authenticate.php"><button>Log In Here!</button></a>'; 
             echo '</body>';
+            echo '</div>';
         }
 ?>
