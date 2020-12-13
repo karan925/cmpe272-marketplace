@@ -28,6 +28,10 @@
       font-family: courier;
       padding: 20px 50px;
    }
+   .container{
+      text-align: center;
+      font-family: courier;
+   }
 
 </style>
 </header>
