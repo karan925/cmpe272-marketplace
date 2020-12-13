@@ -21,6 +21,11 @@
   <a href="./visit_history.php">My History</a>
   <a class = "active" href="./authenticate.php">Log In/Sign Up</a>
 </div>
+<style>
+    .container{
+        text-align: center;
+    }
+    </style>
 </header>
 <?php 
         extract( $_POST );
@@ -103,15 +108,19 @@
 
         function invalidAuthentication() {
             echo '<body>';
+            echo '<div class = container>';
             echo '<h1 class="col-8 offset-2">Invalid Username or Password!</h1>';
             echo '<a href="./authenticate.php"><button>Log In Here!</button></a>'; 
+            echo '</div>';
             echo '</body>';
         }
      
         function fieldsBlank() {
             echo '<body>';
+            echo '<div class = container>';
             echo '<h1 class="col-8 offset-2"> Please fill in all form fields.</h1>';
             echo '<a href="./authenticate.php"><button>Log In Here!</button></a>'; 
+            echo "</div>"
             echo '</body>';
         }
 ?>
