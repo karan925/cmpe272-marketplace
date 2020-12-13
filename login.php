@@ -104,12 +104,14 @@
         function invalidAuthentication() {
             echo '<body>';
             echo '<h1 class="col-8 offset-2">Invalid Username or Password!</h1>';
+            echo '<a href="./authenticate.php"><button>Log In Here!</button></a>'; 
             echo '</body>';
         }
      
         function fieldsBlank() {
             echo '<body>';
             echo '<h1 class="col-8 offset-2"> Please fill in all form fields.</h1>';
+            echo '<a href="./authenticate.php"><button>Log In Here!</button></a>'; 
             echo '</body>';
         }
 ?>
