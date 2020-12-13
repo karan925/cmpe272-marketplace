@@ -101,6 +101,6 @@
 
 	echo "<h2>Thank you! Your review and rating have been successfully submitted!</h2>";
 	echo '<a href="./companies_link.php"><button>Check out more of our products!</button></a>';
-}
+
 
 ?>
