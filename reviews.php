@@ -39,6 +39,10 @@
     text-align: center;
     font-family: courier;
   }
+  .container{
+    text-align: center;
+    font-family: courier;
+  }
 </style>
 
 <div class="topnav">
@@ -79,8 +83,11 @@
           $Username = $x['username'];
         }
         if ($loggedin == 0) {
+          echo '<div class = container>';
           echo "Log in to leave a review";
+          echo '<br>';
           echo '<a href="./authenticate.php"><button class="btn btn-primary">>Log In Here!</button></a>'; 
+          echo '</div>';
           die();
         }
         

@@ -125,6 +125,7 @@
             echo '<body>';
             echo '<div class = container>';
             echo '<h1 class="col-8 offset-2">Please retry! Passwords dont match. </h1>';
+            echo '<br>';
             echo '<a href="./authenticate.php"><button class="btn btn-warning">Log In Here!</button></a>'; 
             echo '</div>';
             echo '</body>';
@@ -134,6 +135,7 @@
             echo '<body>';
             echo '<div class = container>';
             echo '<h1 class="col-8 offset-2">A user with this username already exists. Please Log In.</h1>';
+            echo '<br>';
             echo '<a href="./authenticate.php"><button class="btn btn-warning">Log In Here!</button></a>'; 
             echo '</body>';
             echo '</div>';
@@ -143,6 +145,7 @@
             echo '<body>';
             echo '<div class = container>';
             echo '<h1 class="col-8 offset-2"> Please fill in all form fields.</h1>';
+            echo '<br>';
             echo '<a href="./authenticate.php"><button class="btn btn-warning">Log In Here!</button></a>'; 
             echo '</body>';
             echo '</div>';
