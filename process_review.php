@@ -26,37 +26,36 @@
 		die("Connection failed: " . $con->connect_error);
 	}
 
-	if (strlen($review) > 0) {
-		$select_username = "SELECT username from heroku_8c6c26a69cb9c50.session_status WHERE status='session'";
-		if ( !( $result = mysqli_query($con, $select_username))) {
-			echo mysqli_error($con)."<br>";
-			die();
-		}
 
-		foreach ($result as $x) {
-			$Username = $x['username'];
-			$loggedin = $x['loggedin'];
-		}
-		if ($loggedin == 1) {
-		$select_review_sql = "SELECT * FROM heroku_8c6c26a69cb9c50.review WHERE name = "."'".$Username."' ". "AND item = "."'".$product_name."'";
-		if ( !( $result = mysqli_query($con, $select_review_sql))) {
-			print("Could not execute query! <br />");
-			die();
-		}
+	$select_username = "SELECT username from heroku_8c6c26a69cb9c50.session_status WHERE status='session'";
+	if ( !( $result = mysqli_query($con, $select_username))) {
+		echo mysqli_error($con)."<br>";
+		die();
+	}
 
-		if (mysqli_num_rows($result) !== 0) {
-			print("You have already submitted a review of this item. <br />");
-			echo '<a href="./companies_link.php"><button>Check out more of our products!</button></a>';
+	foreach ($result as $x) {
+		$Username = $x['username'];
+	}
+
+	$select_review_sql = "SELECT * FROM heroku_8c6c26a69cb9c50.review WHERE name = "."'".$Username."' ". "AND item = "."'".$product_name."'";
+	if ( !( $result = mysqli_query($con, $select_review_sql))) {
+		print("Could not execute query! <br />");
+		die();
+	}
+
+	if (mysqli_num_rows($result) !== 0) {
+		print("You have already submitted a review of this item. <br />");
+		echo '<a href="./companies_link.php"><button>Check out more of our products!</button></a>';
+		die();
+	}
+	else {
+		$insert_review_sql = "INSERT INTO heroku_8c6c26a69cb9c50.review (name, item, content) VALUES ("."'".$Username."', "."'".$product_name."', "."'".$review."'".")";
+		if ( !( $result = mysqli_query($con, $insert_review_sql))) {
+			print("Could not execute query 1! <br />");
 			die();
-		}
-		else {
-			$insert_review_sql = "INSERT INTO heroku_8c6c26a69cb9c50.review (name, item, content) VALUES ("."'".$Username."', "."'".$product_name."', "."'".$review."'".")";
-			if ( !( $result = mysqli_query($con, $insert_review_sql))) {
-	            print("Could not execute query 1! <br />");
-	            die();
-	        }
 		}
 	}
+
 
 	$select_rating_sql = "SELECT id, numvotes, score FROM heroku_8c6c26a69cb9c50.rating WHERE item = '".$product_name."'";
 	if ( !( $result = mysqli_query($con, $select_rating_sql))) {
@@ -103,8 +102,5 @@
 	echo "<h2>Thank you! Your review and rating have been successfully submitted!</h2>";
 	echo '<a href="./companies_link.php"><button>Check out more of our products!</button></a>';
 }
-else {
-	echo "Log in to add a review";
-    echo '<a href="./authenticate.php"><button>Log In Here!</button></a>';
-}
+
 ?>
