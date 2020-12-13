@@ -136,7 +136,7 @@
       </div>
 
       <div class="item">
-        <img src="pics/RoastedPotatos.jpg" alt="potato" style="width:80%;">
+        <img src="pics/pot.jpg" alt="potato" style="width:80%;">
       </div>
     </div>
 
