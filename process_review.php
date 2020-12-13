@@ -35,8 +35,9 @@
 
 		foreach ($result as $x) {
 			$Username = $x['username'];
+			$loggedin = $x['loggedin'];
 		}
-
+		if ($loggedin == 1) {
 		$select_review_sql = "SELECT * FROM heroku_8c6c26a69cb9c50.review WHERE name = "."'".$Username."' ". "AND item = "."'".$product_name."'";
 		if ( !( $result = mysqli_query($con, $select_review_sql))) {
 			print("Could not execute query! <br />");
@@ -101,4 +102,9 @@
 
 	echo "<h2>Thank you! Your review and rating have been successfully submitted!</h2>";
 	echo '<a href="./companies_link.php"><button>Check out more of our products!</button></a>';
+}
+else {
+	echo "Log in to add a review";
+    echo '<a href="./authenticate.php"><button>Log In Here!</button></a>';
+}
 ?>
