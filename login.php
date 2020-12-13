@@ -110,7 +110,7 @@
             echo '<body>';
             echo '<div class = container>';
             echo '<h1 class="col-8 offset-2">Invalid Username or Password!</h1>';
-            echo '<a href="./authenticate.php"><button>Log In Here!</button></a>'; 
+            echo '<a href="./authenticate.php"><button class="btn btn-warning">Log In Here!</button></a>'; 
             echo '</div>';
             echo '</body>';
         }
@@ -119,7 +119,7 @@
             echo '<body>';
             echo '<div class = container>';
             echo '<h1 class="col-8 offset-2"> Please fill in all form fields.</h1>';
-            echo '<a href="./authenticate.php"><button>Log In Here!</button></a>'; 
+            echo '<a href="./authenticate.php"><button class="btn btn-warning">Log In Here!</button></a>'; 
             echo "</div>";
             echo '</body>';
         }

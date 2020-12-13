@@ -80,7 +80,7 @@
         }
         if ($loggedin == 0) {
           echo "Log in to leave a review";
-          echo '<a href="./authenticate.php"><button>Log In Here!</button></a>'; 
+          echo '<a href="./authenticate.php"><button class="btn btn-primary">>Log In Here!</button></a>'; 
           die();
         }
         
